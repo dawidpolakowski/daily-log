@@ -2649,5 +2649,17 @@
     "title": "New book outline",
     "excerpt": "Started outlining a new book — premise, tone, and core themes.",
     "tags": []
+  },
+  {
+    "date": "2025-10-01",
+    "month": "2025-10",
+    "file": "2025-10/2025-10-01.md",
+    "title": "YouTube planning",
+    "excerpt": "Planned upcoming YouTube video topics and a posting schedule.",
+    "tags": [
+      "youtube",
+      "book",
+      "typewriterx"
+    ]
   }
 ]
