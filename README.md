@@ -39,9 +39,9 @@ Each daily file contains a simple structure:
 Creating a New Daily Log
 
 Run the helper script:
-
+```
 ./newlog.sh
-
+```
 The script will:
 - create the logs/ directory if it does not exist
 - generate today's log file
