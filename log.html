@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log Viewer</title>
+
+    <!-- Markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- GitHub-style markdown -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
+
+    <style>
+        body {
+            background: #0f172a;
+            padding: 20px;
+        }
+
+        .markdown-body {
+            max-width: 800px;
+            margin: auto;
+            background: #020617;
+            padding: 30px;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="markdown-body" id="content">
+        Loading...
+    </div>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const file = params.get('file');
+
+        if (!file) {
+            document.getElementById('content').innerHTML = "No file specified.";
+        } else {
+            fetch(`logs/${file}`)
+                .then(res => res.text())
+                .then(md => {
+                    document.getElementById('content').innerHTML = marked.parse(md);
+                })
+                .catch(() => {
+                    document.getElementById('content').innerHTML = "Failed to load log.";
+                });
+        }
+    </script>
+
+</body>
+
+</html>
