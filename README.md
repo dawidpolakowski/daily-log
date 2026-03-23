@@ -1,30 +1,70 @@
-# Daily Development Log
+# 📘 Daily Log
 
-A simple repository used to keep a daily engineering log of development work.
+A simple, automated daily logging system powered by shell scripts and GitHub Pages.
 
-The goal of this project is to document daily progress, ideas, fixes, and experiments while maintaining a clean Git history.
+🔗 **Live site:** https://dawidpolakowski.github.io/daily-log/
 
-Logs are stored as Markdown files using the format:
+---
 
-logs/YYYY-MM-DD.md
+## 🚀 Features
 
+* ✅ Create daily logs with one command
+* ✅ Auto-generate `logs.json` (no manual updates)
+* ✅ Extract titles directly from markdown files
+* ✅ Publish logs via GitHub Pages
+* ✅ Clean, minimal, scalable structure
 
-Repository Structure
+---
+
+## ⚙️ How It Works
+
+1. Run the script:
+
+   ```bash
+   ./newlog.sh "Your log title"
+   ```
+
+2. Script will:
+
+   * Create a new log file in `/logs`
+   * Add a title + template
+   * Scan all logs
+   * Regenerate `logs.json`
+
+3. GitHub Pages displays logs automatically on:
+
+   ```
+   /index.html
+   ```
+
+---
+
+## 📂 Project Structure
+
 ```
-daily-log
-├─ logs/
-│  ├─ 2026-03-04.md
-│  ├─ 2026-03-05.md
-│  └─ ...
-├─ newlog.sh
-└─ README.md
+daily-log/
+│── index.html        # Main page
+│── script.js         # Loads logs.json
+│── style.css         # Styling
+│── newlog.sh         # Log generator script
+│
+└── logs/
+    ├── 2026-03-23.md
+    ├── 2026-03-22.md
+    └── logs.json
 ```
 
-Log Format
+---
 
-Each daily file contains a simple structure:
+## 📝 Log Format
 
-# Development Log - YYYY-MM-DD
+Each log is a markdown file:
+
+```md
+# Your Title Here
+
+## Date
+2026-03-23
 
 ## Work done
 -
@@ -34,37 +74,96 @@ Each daily file contains a simple structure:
 
 ## Ideas / Next steps
 -
-
-
-Creating a New Daily Log
-
-Run the helper script:
 ```
-./newlog.sh
+
+👉 The **first `# Title` line is used automatically** in the UI.
+
+---
+
+## 🔄 logs.json (Auto-generated)
+
+Example:
+
+```json
+[
+  {
+    "title": "Built GitHub Pages auto logs",
+    "file": "2026-03-23.md"
+  }
+]
 ```
-The script will:
-- create the logs/ directory if it does not exist
-- generate today's log file
-- avoid overwriting an existing log
 
+⚠️ Do not edit manually — it is regenerated on each script run.
 
-Typical Daily Workflow
+---
 
-./newlog.sh
-git add logs/*
-git commit -m "log: daily development notes"
-git push
+## 🌐 GitHub Pages Setup
 
+Go to:
 
-Why Keep a Daily Log
+**Settings → Pages**
 
-Benefits include:
-- tracking development progress
-- documenting ideas and experiments
-- maintaining consistent Git activity
-- creating a personal engineering journal
+* Source: `Deploy from a branch`
+* Branch: `main`
+* Folder: `/ (root)`
 
+---
 
-License
+## 🧠 Tech Stack
+
+* Shell (bash)
+* jq (JSON processing)
+* Vanilla JavaScript
+* GitHub Pages (static hosting)
+
+---
+
+## 🔧 Requirements
+
+Install `jq`:
+
+```bash
+sudo apt install jq
+# or
+brew install jq
+```
+
+---
+
+## 🚀 Future Improvements
+
+* 🔍 Search & filters
+* 🏷️ Tags support inside logs
+* 📄 Markdown rendering (instead of raw view)
+* ⚡ GitHub Actions automation
+* 🎨 Custom UI (cyberpunk / forest theme)
+* 📈 SEO pages per log
+
+---
+
+## 📌 Use Cases
+
+* Developer daily logs
+* Project journals
+* Learning tracking
+* Content planning
+* Personal knowledge base
+
+---
+
+## 🤝 Contributing
+
+Feel free to fork and improve — this project is designed to stay simple and extensible.
+
+---
+
+## 📄 License
 
 MIT
+
+---
+
+## 🔗 Author
+
+Created by **Dawid Polakowski**
+GitHub: https://github.com/dawidpolakowski
