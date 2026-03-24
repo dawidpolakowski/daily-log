@@ -19,6 +19,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 🔥 Inject version (commit hash)
+      - name: Inject build version
+        run: |
+          BUILD_ID=${GITHUB_SHA::7}
+          echo "Build ID: $BUILD_ID"
+          sed -i "s/__BUILD_ID__/$BUILD_ID/g" index.html
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 
@@ -28,4 +35,17 @@ jobs:
           path: ./
 
       - name: Deploy
+        id: deployment
         uses: actions/deploy-pages@v4
+
+      # 🧪 Verify deployment
+      - name: Verify deployment
+        run: |
+          BUILD_ID=${GITHUB_SHA::7}
+          echo "Checking for build: $BUILD_ID"
+
+          sleep 40
+
+          RESPONSE=$(curl -s "https://dawidpolakowski.github.io/daily-log/?v=$(date +%s)")
+
+          echo "$RESPONSE" | grep "$BUILD_ID" && echo "✅ OK" || (echo "❌ NOT UPDATED" && exit 1)

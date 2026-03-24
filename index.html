@@ -18,5 +18,10 @@
 </header>
     <div id="logs"></div>
 <script src="script.js?v=2"></script></body>
+<div id="build-info"></div>
 
+<script>
+  const meta = document.querySelector('meta[name="build"]');
+  document.getElementById('build-info').innerText = "Build: " + meta.content;
+</script>
 </html>
