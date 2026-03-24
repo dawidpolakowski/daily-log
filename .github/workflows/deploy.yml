@@ -38,14 +38,23 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      # 🧪 Verify deployment
       - name: Verify deployment
-        run: |
-          BUILD_ID=${GITHUB_SHA::7}
-          echo "Checking for build: $BUILD_ID"
+  run: |
+    BUILD_ID=${GITHUB_SHA::7}
+    echo "Checking for build: $BUILD_ID"
 
-          sleep 60
+    for i in {1..5}; do
+      echo "Attempt $i..."
 
-          RESPONSE=$(curl -s "https://dawidpolakowski.github.io/daily-log/?v=$(date +%s)")
+      RESPONSE=$(curl -s "https://dawidpolakowski.github.io/daily-log/?v=$(date +%s)")
 
-          echo "$RESPONSE" | grep "$BUILD_ID" && echo "✅ OK" || (echo "❌ NOT UPDATED" && exit 1)
+      if echo "$RESPONSE" | grep -q "$BUILD_ID"; then
+        echo "✅ Deployment OK"
+        exit 0
+      fi
+
+      sleep 60
+    done
+
+    echo "❌ NOT UPDATED after retries"
+    exit 1
