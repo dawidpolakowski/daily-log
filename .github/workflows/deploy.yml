@@ -44,7 +44,7 @@ jobs:
           BUILD_ID=${GITHUB_SHA::7}
           echo "Checking for build: $BUILD_ID"
 
-          sleep 40
+          sleep 60
 
           RESPONSE=$(curl -s "https://dawidpolakowski.github.io/daily-log/?v=$(date +%s)")
 
