@@ -2,27 +2,83 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Daily Logs</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <meta name="build" content="__BUILD_ID__">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Logs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <meta name="build" content="__BUILD_ID__">
 </head>
 
 <body>
-    <header style="display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-  <h1>📘 Daily Logs</h1>
-  <a href="https://github.com/dawidpolakowski/daily-log" target="_blank">
-    🔗 View Repo
-  </a>
-</header>
-    <div id="logs"></div>
-<script src="script.js?v=2"></script></body>
-<div id="build-info"></div>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Daily Logs home">
+        <span class="brand-mark">DL</span>
+        <span>
+          <strong>Daily Logs</strong>
+          <small>Project journal</small>
+        </span>
+      </a>
 
-<script>
-  const meta = document.querySelector('meta[name="build"]');
-  document.getElementById('build-info').innerText = "Build: " + meta.content;
-</script>
+      <a class="ghost-link" href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">
+        View Repo
+      </a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Markdown logs, shipped as a static site</p>
+          <h1>Track the work, keep the signal.</h1>
+          <p class="hero-copy">
+            A clean timeline of daily engineering notes, grouped by month and ready for GitHub Pages.
+          </p>
+        </div>
+
+        <div class="hero-panel" aria-label="Log statistics">
+          <span>Total logs</span>
+          <strong id="total-logs">0</strong>
+          <small id="latest-log">Loading latest entry...</small>
+        </div>
+      </section>
+
+      <section class="toolbar" aria-label="Log filters">
+        <label class="search-field">
+          <span>Search logs</span>
+          <input id="search-input" type="search" placeholder="Search by title, date, or month" autocomplete="off">
+        </label>
+
+        <label class="select-field">
+          <span>Month</span>
+          <select id="month-filter">
+            <option value="all">All months</option>
+          </select>
+        </label>
+      </section>
+
+      <section class="content-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Timeline</p>
+            <h2>Recent logs</h2>
+          </div>
+          <span id="result-count">Loading...</span>
+        </div>
+
+        <div id="logs" class="log-grid" aria-live="polite"></div>
+        <nav id="pagination" class="pagination" aria-label="Logs pagination"></nav>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span id="build-info">Build: __BUILD_ID__</span>
+    </footer>
+  </div>
+
+  <script src="script.js?v=3"></script>
+</body>
+
 </html>

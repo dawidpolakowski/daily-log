@@ -2,98 +2,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log Viewer</title>
-
-    <!-- Markdown parser -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-
-    <!-- GitHub-style markdown -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
-
-    <style>
-        body {
-            background: #0f172a;
-            padding: 20px;
-        }
-
-        .markdown-body {
-            max-width: 800px;
-            margin: auto;
-            background: #020617;
-            padding: 30px;
-            border-radius: 12px;
-        }
-
-        .back-btn {
-            display: inline-block;
-            padding: 10px 16px;
-            margin: 10px 0;
-
-            background-color: #2a2a2a;
-            color: #e0e0e0;
-
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 500;
-
-            border-radius: 8px;
-            border: 1px solid #3a3a3a;
-
-            transition: all 0.2s ease;
-            cursor: pointer;
-        }
-
-        /* hover */
-        .back-btn:hover {
-            background-color: #3a3a3a;
-            color: #ffffff;
-            border-color: #555;
-            transform: translateY(-1px);
-        }
-
-        /* active (klik) */
-        .back-btn:active {
-            transform: translateY(0);
-            background-color: #1f1f1f;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log Viewer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 </head>
 
 <body>
+  <div class="app-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Daily Logs home">
+        <span class="brand-mark">DL</span>
+        <span>
+          <strong>Daily Logs</strong>
+          <small>Log viewer</small>
+        </span>
+      </a>
 
-    <div
-        style="max-width:800px; margin:auto; display:flex; justify-content:space-between; align-items:center; margin-bottom:20px;">
-        <a class="back-btn" href="index.html">⬅ Back to logs</a>
-
-        <a class="back-btn" href="https://github.com/dawidpolakowski/daily-log" target="_blank">
-            🔗 Repo
+      <div class="header-actions">
+        <a class="ghost-link" href="index.html">Back to logs</a>
+        <a class="ghost-link" href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">
+          View Repo
         </a>
-    </div>
-    </div>
-    <div class="markdown-body" id="content">
-        Loading...
-    </div>
+      </div>
+    </header>
 
-    <script>
-        const params = new URLSearchParams(window.location.search);
-        const file = params.get('file');
+    <main>
+      <article class="reader">
+        <div id="content" class="markdown-body">Loading...</div>
+      </article>
+    </main>
+  </div>
 
-        if (!file) {
-            document.getElementById('content').innerHTML = "No file specified.";
-        } else {
-            fetch(`logs/${file}`)
-                .then(res => res.text())
-                .then(md => {
-                    document.getElementById('content').innerHTML = marked.parse(md);
-                })
-                .catch(() => {
-                    document.getElementById('content').innerHTML = "Failed to load log.";
-                });
-        }
-    </script>
+  <script>
+    const content = document.getElementById('content');
+    const params = new URLSearchParams(window.location.search);
+    const file = params.get('file');
 
+    function isSafeLogPath(path) {
+      return /^[0-9]{4}-[0-9]{2}\/[0-9]{4}-[0-9]{2}-[0-9]{2}\.md$/.test(path)
+        || /^[0-9]{4}-[0-9]{2}-[0-9]{2}\.md$/.test(path);
+    }
+
+    if (!file || !isSafeLogPath(file)) {
+      content.textContent = 'No valid log file specified.';
+    } else {
+      fetch(`logs/${file}`)
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`Failed to load ${file}`);
+          }
+
+          return response.text();
+        })
+        .then((markdown) => {
+          content.innerHTML = marked.parse(markdown);
+        })
+        .catch(() => {
+          content.textContent = 'Failed to load log.';
+        });
+    }
+  </script>
 </body>
 
 </html>

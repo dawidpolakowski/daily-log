@@ -1,22 +1,23 @@
-# 📘 Daily Log
+# Daily Log
 
 A simple, automated daily logging system powered by shell scripts and GitHub Pages.
 
-🔗 **Live site:** https://dawidpolakowski.github.io/daily-log/
+**Live site:** https://dawidpolakowski.github.io/daily-log/
 
 ---
 
-## 🚀 Features
+## Features
 
-* ✅ Create daily logs with one command
-* ✅ Auto-generate `logs.json` (no manual updates)
-* ✅ Extract titles directly from markdown files
-* ✅ Publish logs via GitHub Pages
-* ✅ Clean, minimal, scalable structure
+* Create daily logs with one command
+* Store logs in month folders like `logs/2026-04/2026-04-30.md`
+* Auto-generate `logs.json` from Markdown files
+* Extract titles directly from each file's first `# Heading`
+* Publish logs via GitHub Pages
+* Search, filter, paginate, and read Markdown logs in the browser
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 1. Run the script:
 
@@ -26,9 +27,9 @@ A simple, automated daily logging system powered by shell scripts and GitHub Pag
 
 2. Script will:
 
-   * Create a new log file in `/logs`
-   * Add a title + template
-   * Scan all logs
+   * Create a new log file in the current month folder
+   * Add a title and starter template
+   * Scan all month folders
    * Regenerate `logs.json`
 
 3. GitHub Pages displays logs automatically on:
@@ -39,24 +40,28 @@ A simple, automated daily logging system powered by shell scripts and GitHub Pag
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 daily-log/
-│── index.html        # Main page
-│── script.js         # Loads logs.json
-│── style.css         # Styling
-│── newlog.sh         # Log generator script
+|-- index.html        # Main timeline page
+|-- log.html          # Markdown reader page
+|-- script.js         # Loads, filters, and paginates logs.json
+|-- style.css         # App styling
+|-- newlog.sh         # Log generator script
 │
-└── logs/
-    ├── 2026-03-23.md
-    ├── 2026-03-22.md
-    └── logs.json
+`-- logs/
+    |-- 2026-03/
+    |   |-- 2026-03-22.md
+    |   `-- 2026-03-23.md
+    |-- 2026-04/
+    |   `-- 2026-04-30.md
+    `-- logs.json
 ```
 
 ---
 
-## 📝 Log Format
+## Log Format
 
 Each log is a markdown file:
 
@@ -76,28 +81,30 @@ Each log is a markdown file:
 -
 ```
 
-👉 The **first `# Title` line is used automatically** in the UI.
+The first `# Title` line is used automatically in the UI.
 
 ---
 
-## 🔄 logs.json (Auto-generated)
+## logs.json
 
 Example:
 
 ```json
 [
   {
+    "date": "2026-03-23",
+    "month": "2026-03",
     "title": "Built GitHub Pages auto logs",
-    "file": "2026-03-23.md"
+    "file": "2026-03/2026-03-23.md"
   }
 ]
 ```
 
-⚠️ Do not edit manually — it is regenerated on each script run.
+Do not edit manually. It is regenerated on each script run.
 
 ---
 
-## 🌐 GitHub Pages Setup
+## GitHub Pages Setup
 
 Go to:
 
@@ -109,7 +116,7 @@ Go to:
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 * Shell (bash)
 * jq (JSON processing)
@@ -118,7 +125,7 @@ Go to:
 
 ---
 
-## 🔧 Requirements
+## Requirements
 
 Install `jq`:
 
@@ -130,18 +137,15 @@ brew install jq
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
-* 🔍 Search & filters
-* 🏷️ Tags support inside logs
-* 📄 Markdown rendering (instead of raw view)
-* ⚡ GitHub Actions automation
-* 🎨 Custom UI (cyberpunk / forest theme)
-* 📈 SEO pages per log
+* Tags support inside logs
+* GitHub Actions automation for creating or validating logs
+* SEO pages per log
 
 ---
 
-## 📌 Use Cases
+## Use Cases
 
 * Developer daily logs
 * Project journals
@@ -151,19 +155,19 @@ brew install jq
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Feel free to fork and improve — this project is designed to stay simple and extensible.
 
 ---
 
-## 📄 License
+## License
 
 MIT
 
 ---
 
-## 🔗 Author
+## Author
 
 Created by **Dawid Polakowski**
 GitHub: https://github.com/dawidpolakowski

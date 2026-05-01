@@ -1,17 +1,28 @@
 #!/bin/sh
 
+set -eu
+
 LOG_DIR="logs"
 JSON_FILE="$LOG_DIR/logs.json"
 TODAY=$(date +%F)
-FILE="$LOG_DIR/$TODAY.md"
+MONTH=$(date +%Y-%m)
+MONTH_DIR="$LOG_DIR/$MONTH"
+TITLE=${1:-"Development Log - $TODAY"}
+FILE="$MONTH_DIR/$TODAY.md"
 
-# create logs directory if missing
-mkdir -p "$LOG_DIR"
+create_log_file() {
+    mkdir -p "$MONTH_DIR"
 
-# create log file if not exists
-if [ ! -f "$FILE" ]; then
+    if [ -f "$FILE" ]; then
+        echo "Log already exists: $FILE"
+        return
+    fi
+
     cat <<EOF > "$FILE"
-# Development Log - $TODAY
+# $TITLE
+
+## Date
+$TODAY
 
 ## Work done
 -
@@ -23,20 +34,50 @@ if [ ! -f "$FILE" ]; then
 -
 
 EOF
+
     echo "Log created: $FILE"
-else
-    echo "Log already exists: $FILE"
-fi
+}
 
-# generate logs.json from all .md files
-ls "$LOG_DIR"/*.md 2>/dev/null | sed 's#.*/##' | jq -R -s '
-split("\n")[:-1]
-| map({
-    title: ("Daily Log - " + (. | rtrimstr(".md"))),
-    file: .
-})
-| sort_by(.file)
-| reverse
-' > "$JSON_FILE"
+extract_title() {
+    awk '
+        /^# / {
+            sub(/^# /, "")
+            print
+            exit
+        }
+    ' "$1"
+}
 
-echo "logs.json regenerated: $JSON_FILE"
+generate_logs_index() {
+    mkdir -p "$LOG_DIR"
+
+    find "$LOG_DIR" -mindepth 2 -maxdepth 2 -type f -name "*.md" | sort -r | while IFS= read -r path; do
+        relative_path=${path#"$LOG_DIR"/}
+        file_name=${path##*/}
+        date_key=${file_name%.md}
+        month_key=${relative_path%%/*}
+        heading=$(extract_title "$path")
+
+        if [ -z "$heading" ]; then
+            heading="Daily Log - $date_key"
+        fi
+
+        printf '%s\t%s\t%s\t%s\n' "$date_key" "$month_key" "$relative_path" "$heading"
+    done | jq -R -s '
+        split("\n")[:-1]
+        | map(split("\t"))
+        | map({
+            date: .[0],
+            month: .[1],
+            file: .[2],
+            title: .[3]
+        })
+        | sort_by(.date)
+        | reverse
+    ' > "$JSON_FILE"
+
+    echo "logs.json regenerated: $JSON_FILE"
+}
+
+create_log_file
+generate_logs_index
