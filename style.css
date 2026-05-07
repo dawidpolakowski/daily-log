@@ -269,7 +269,7 @@ select:focus {
 }
 
 .log-card {
-  min-height: 168px;
+  min-height: 176px;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.055), rgba(255, 255, 255, 0.028));
@@ -284,7 +284,7 @@ select:focus {
 
 .log-card-link {
   display: flex;
-  min-height: 168px;
+  min-height: 176px;
   flex-direction: column;
   padding: 18px;
 }
@@ -298,8 +298,9 @@ select:focus {
 
 .log-card h3 {
   margin: 16px 0 auto;
-  font-size: 1.08rem;
-  line-height: 1.35;
+  font-size: 1rem;
+  line-height: 1.38;
+  overflow-wrap: anywhere;
 }
 
 .log-card p {
