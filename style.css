@@ -1,18 +1,18 @@
 :root {
   color-scheme: dark;
-  --bg: #08090d;
-  --bg-soft: #11131a;
-  --panel: rgba(19, 22, 31, 0.86);
-  --panel-strong: #171a23;
-  --border: rgba(255, 255, 255, 0.1);
-  --border-strong: rgba(255, 255, 255, 0.18);
-  --text: #f7f8fb;
-  --muted: #a7adbb;
-  --faint: #707789;
-  --accent: #45d1a1;
-  --accent-strong: #7be3c1;
-  --blue: #64a9ff;
-  --shadow: 0 24px 70px rgba(0, 0, 0, 0.38);
+  --bg: #0d1117;
+  --bg-soft: #161b22;
+  --panel: rgba(22, 27, 34, 0.86);
+  --panel-strong: #21262d;
+  --border: #30363d;
+  --border-strong: #484f58;
+  --text: #e6edf3;
+  --muted: #8b949e;
+  --faint: #6e7681;
+  --accent: #58a6ff;
+  --accent-strong: #79c0ff;
+  --blue: #58a6ff;
+  --shadow: 0 8px 24px rgba(1, 4, 9, 0.75);
 }
 
 * {
@@ -22,9 +22,7 @@
 body {
   min-height: 100vh;
   margin: 0;
-  background:
-    radial-gradient(circle at top left, rgba(69, 209, 161, 0.12), transparent 32rem),
-    linear-gradient(135deg, #08090d 0%, #11131a 48%, #0d1016 100%);
+  background: #0d1117;
   color: var(--text);
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
@@ -74,7 +72,7 @@ select {
   place-items: center;
   border: 1px solid var(--border-strong);
   border-radius: 8px;
-  background: linear-gradient(145deg, rgba(69, 209, 161, 0.22), rgba(100, 169, 255, 0.1));
+  background: linear-gradient(145deg, rgba(88, 166, 255, 0.15), rgba(188, 140, 255, 0.08));
   color: var(--accent-strong);
   font-size: 0.82rem;
   font-weight: 800;
@@ -244,8 +242,8 @@ select {
 
 input:focus,
 select:focus {
-  border-color: rgba(69, 209, 161, 0.72);
-  box-shadow: 0 0 0 4px rgba(69, 209, 161, 0.12);
+  border-color: rgba(88, 166, 255, 0.72);
+  box-shadow: 0 0 0 4px rgba(88, 166, 255, 0.12);
 }
 
 .content-section {
@@ -277,8 +275,8 @@ select:focus {
 }
 
 .log-card:hover {
-  border-color: rgba(69, 209, 161, 0.48);
-  background: linear-gradient(180deg, rgba(69, 209, 161, 0.1), rgba(255, 255, 255, 0.035));
+  border-color: rgba(88, 166, 255, 0.48);
+  background: linear-gradient(180deg, rgba(88, 166, 255, 0.08), rgba(255, 255, 255, 0.025));
   transform: translateY(-2px);
 }
 
