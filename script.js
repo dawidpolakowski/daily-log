@@ -100,18 +100,14 @@ function renderLogs() {
   elements.logs.replaceChildren();
   elements.resultCount.textContent = `${filteredLogs.length} ${filteredLogs.length === 1 ? 'entry' : 'entries'}`;
 
-  if (!pageLogs.length) {
+  if (pageLogs.length) {
+    elements.logs.append(...pageLogs.map(createLogCard));
+  } else {
     const emptyState = document.createElement('div');
     emptyState.className = 'empty-state';
     emptyState.textContent = 'No logs match the current filters.';
     elements.logs.appendChild(emptyState);
-    renderPagination(filteredLogs.length);
-    return;
   }
-
-  pageLogs.forEach((log) => {
-    elements.logs.appendChild(createLogCard(log));
-  });
 
   renderPagination(filteredLogs.length);
 }
@@ -182,7 +178,10 @@ async function loadLogs() {
     renderLogs();
   } catch (error) {
     console.error(error);
-    elements.logs.innerHTML = '<div class="empty-state">Failed to load logs.</div>';
+    const errorState = document.createElement('div');
+    errorState.className = 'empty-state';
+    errorState.textContent = 'Failed to load logs.';
+    elements.logs.replaceChildren(errorState);
     elements.resultCount.textContent = 'Unavailable';
   }
 }

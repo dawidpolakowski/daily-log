@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked@15/marked.min.js"></script>
 </head>
 
 <body>
@@ -62,6 +62,8 @@
         })
         .then((markdown) => {
           content.innerHTML = marked.parse(markdown);
+          const heading = content.querySelector('h1');
+          if (heading) document.title = heading.textContent;
         })
         .catch(() => {
           content.textContent = 'Failed to load log.';

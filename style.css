@@ -239,7 +239,7 @@ input {
 
 select {
   min-width: 180px;
-  padding: 0 38px 0 14px;
+  padding: 0 14px;
 }
 
 input:focus,
