@@ -1,0 +1,20 @@
+{
+  "name": "daily-log",
+  "version": "1.0.0",
+  "description": "Automated daily logging system published via GitHub Pages.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Dawid Polakowski",
+  "homepage": "https://dawidpolakowski.github.io/daily-log/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dawidpolakowski/daily-log.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "new": "node scripts/new.js",
+    "build": "node scripts/build.js"
+  }
+}

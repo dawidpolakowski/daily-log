@@ -1,6 +1,6 @@
 # Daily Log
 
-A simple, automated daily logging system powered by shell scripts and GitHub Pages.
+A simple, automated daily logging system powered by a small Node script and GitHub Pages.
 
 **Live site:** https://dawidpolakowski.github.io/daily-log/
 
@@ -19,20 +19,32 @@ A simple, automated daily logging system powered by shell scripts and GitHub Pag
 
 ## How It Works
 
-1. Run the script:
+1. Create today's log:
 
    ```bash
-   ./newlog.sh "Your log title"
+   npm run new -- "Your log title"
+   # or directly:
+   node scripts/new.js "Your log title"
    ```
 
-2. Script will:
+   The title is optional — it defaults to `Development Log - <date>`.
+
+2. The script will:
 
    * Create a new log file in the current month folder
    * Add a title and starter template
    * Scan all month folders
    * Regenerate `logs.json`
 
-3. GitHub Pages displays logs automatically on:
+3. Rebuild the index without creating a log (e.g. after editing a title):
+
+   ```bash
+   npm run build
+   ```
+
+   This also runs automatically in CI on every push, so the index never drifts.
+
+4. GitHub Pages displays logs automatically on:
 
    ```
    /index.html
@@ -48,7 +60,11 @@ daily-log/
 |-- log.html          # Markdown reader page
 |-- script.js         # Loads, filters, and paginates logs.json
 |-- style.css         # App styling
-|-- newlog.sh         # Log generator script
+|-- package.json      # npm scripts: new, build
+|-- scripts/
+|   |-- lib.js        # Core: template, title extraction, index builder
+|   |-- new.js        # Create today's log + rebuild index
+|   `-- build.js      # Rebuild logs.json only
 │
 `-- logs/
     |-- 2026-03/
@@ -118,29 +134,21 @@ Go to:
 
 ## Tech Stack
 
-* Shell (bash)
-* jq (JSON processing)
-* Vanilla JavaScript
+* Node.js (zero-dependency log generator)
+* Vanilla JavaScript (frontend)
 * GitHub Pages (static hosting)
 
 ---
 
 ## Requirements
 
-Install `jq`:
-
-```bash
-sudo apt install jq
-# or
-brew install jq
-```
+* Node.js 18+ (no npm dependencies to install)
 
 ---
 
 ## Future Improvements
 
 * Tags support inside logs
-* GitHub Actions automation for creating or validating logs
 * SEO pages per log
 
 ---

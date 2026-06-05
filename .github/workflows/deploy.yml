@@ -19,6 +19,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # 🗂️ Regenerate logs.json from the markdown files so the index never drifts
+      - name: Build logs index
+        run: node scripts/build.js
+
       # 🔥 Inject build version (commit hash)
       - name: Inject build version
         run: |
