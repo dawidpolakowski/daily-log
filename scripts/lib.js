@@ -30,6 +30,9 @@ ${dateKey}
 
 ## Ideas / Next steps
 -
+
+## Tags
+-
 `;
 }
 
@@ -58,6 +61,30 @@ export function extractExcerpt(markdown, maxLength = 150) {
   }
 
   return '';
+}
+
+/** Tags from a "## Tags" section or a "Tags:" line. Returns a string array. */
+export function extractTags(markdown) {
+  const lines = markdown.split(/\r?\n/);
+
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i].trim();
+
+    let raw = null;
+    if (/^#{1,6}\s+tags\b/i.test(line)) {
+      raw = (lines[i + 1] || '').trim().replace(/^[-*]\s+/, '');
+    } else if (/^tags\s*:/i.test(line)) {
+      raw = line.replace(/^tags\s*:/i, '');
+    }
+
+    if (raw) {
+      return [...new Set(
+        raw.split(/[,;]/).map((t) => t.trim().replace(/^#/, '')).filter((t) => t && t !== '-'),
+      )];
+    }
+  }
+
+  return [];
 }
 
 async function exists(target) {
@@ -123,6 +150,7 @@ export async function buildIndex() {
         file: `${month.name}/${file}`,
         title: extractTitle(markdown) || `Daily Log - ${dateKey}`,
         excerpt: extractExcerpt(markdown),
+        tags: extractTags(markdown),
       });
     }
   }

@@ -2,7 +2,15 @@
 
 A simple, automated daily logging system powered by a small Node script and GitHub Pages.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Made with Node](https://img.shields.io/badge/Node-%E2%89%A518-339933?logo=node.js&logoColor=white)](package.json)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+[![Deploy](https://github.com/dawidpolakowski/daily-log/actions/workflows/deploy.yml/badge.svg)](https://github.com/dawidpolakowski/daily-log/actions/workflows/deploy.yml)
+
 **Live site:** https://dawidpolakowski.github.io/daily-log/
+
+> An open-source, dependency-free project. Contributions welcome — see
+> [CONTRIBUTING.md](CONTRIBUTING.md) and our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ---
 
@@ -10,10 +18,12 @@ A simple, automated daily logging system powered by a small Node script and GitH
 
 * Create daily logs with one command
 * Store logs in month folders like `logs/2026-04/2026-04-30.md`
-* Auto-generate `logs.json` from Markdown files
+* Auto-generate `logs.json` (title, excerpt, and tags) from Markdown files
 * Extract titles directly from each file's first `# Heading`
 * Publish logs via GitHub Pages
 * Search, filter, paginate, and read Markdown logs in the browser
+* Tag logs with a `## Tags` section and filter by clicking a tag chip
+* Light / dark theme toggle (remembers your choice)
 
 ---
 
@@ -148,8 +158,9 @@ Go to:
 
 ## Future Improvements
 
-* Tags support inside logs
 * SEO pages per log
+* RSS / Atom feed
+* Per-tag archive pages
 
 ---
 

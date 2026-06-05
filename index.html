@@ -11,6 +11,25 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <meta name="build" content="__BUILD_ID__">
+  <script>
+    (function () {
+      function apply(t) {
+        document.documentElement.dataset.theme = t;
+        var md = document.getElementById('md-theme');
+        if (md) md.href = 'https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown-'
+          + (t === 'dark' ? 'dark' : 'light') + '.min.css';
+      }
+      var t = new URLSearchParams(location.search).get('theme')
+        || localStorage.getItem('theme')
+        || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      apply(t);
+      window.__toggleTheme = function () {
+        t = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        localStorage.setItem('theme', t);
+        apply(t);
+      };
+    })();
+  </script>
 </head>
 
 <body>
@@ -34,6 +53,10 @@
         <a href="index.html">Timeline</a>
         <a href="https://github.com/dawidpolakowski/daily-log#readme" target="_blank" rel="noreferrer">Docs</a>
         <a class="nav-cta" href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">GitHub</a>
+        <button id="theme-toggle" class="theme-toggle" type="button" onclick="__toggleTheme()" aria-label="Toggle dark mode" title="Toggle theme">
+          <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        </button>
       </nav>
     </div>
   </header>

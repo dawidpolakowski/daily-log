@@ -45,6 +45,7 @@ function normalizeLog(log) {
     month,
     title: log.title || `Daily Log - ${date}`,
     excerpt: log.excerpt || '',
+    tags: Array.isArray(log.tags) ? log.tags : [],
   };
 }
 
@@ -53,7 +54,7 @@ function getFilteredLogs() {
 
   return state.logs.filter((log) => {
     const matchesMonth = state.month === 'all' || log.month === state.month;
-    const haystack = `${log.title} ${log.excerpt} ${log.date} ${formatMonth(log.month)}`.toLowerCase();
+    const haystack = `${log.title} ${log.excerpt} ${log.tags.join(' ')} ${log.date} ${formatMonth(log.month)}`.toLowerCase();
     const matchesSearch = !query || haystack.includes(query);
 
     return matchesMonth && matchesSearch;
@@ -100,7 +101,31 @@ function createLogCard(log) {
   link.appendChild(foot);
   article.appendChild(link);
 
+  if (log.tags.length) {
+    const tags = document.createElement('div');
+    tags.className = 'tags';
+
+    log.tags.forEach((tag) => {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'tag';
+      chip.textContent = tag;
+      chip.addEventListener('click', () => filterByTag(tag));
+      tags.appendChild(chip);
+    });
+
+    article.appendChild(tags);
+  }
+
   return article;
+}
+
+function filterByTag(tag) {
+  elements.searchInput.value = tag;
+  state.query = tag;
+  state.currentPage = 1;
+  renderLogs();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function renderSkeletons(count = 6) {

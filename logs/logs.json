@@ -4,867 +4,1006 @@
     "month": "2026-06",
     "file": "2026-06/2026-06-05.md",
     "title": "Daily-log generator",
-    "excerpt": "Added a Node-based log generator and tidied the project."
+    "excerpt": "Added a Node-based log generator and tidied the project.",
+    "tags": [
+      "daily-log",
+      "tooling"
+    ]
   },
   {
     "date": "2026-06-04",
     "month": "2026-06",
     "file": "2026-06/2026-06-04.md",
     "title": "Lego time-lapse",
-    "excerpt": "Recorded a Lego build time-lapse and a short unboxing."
+    "excerpt": "Recorded a Lego build time-lapse and a short unboxing.",
+    "tags": [
+      "lego",
+      "youtube"
+    ]
   },
   {
     "date": "2026-06-03",
     "month": "2026-06",
     "file": "2026-06/2026-06-03.md",
     "title": "Vlog captions",
-    "excerpt": "Edited a vlog and prepared captions."
+    "excerpt": "Edited a vlog and prepared captions.",
+    "tags": [
+      "vlog",
+      "editing"
+    ]
   },
   {
     "date": "2026-06-02",
     "month": "2026-06",
     "file": "2026-06/2026-06-02.md",
     "title": "Guinea pig shoot",
-    "excerpt": "Filmed new guinea pig footage for the week."
+    "excerpt": "Filmed new guinea pig footage for the week.",
+    "tags": [
+      "guinea-pigs",
+      "filming"
+    ]
   },
   {
     "date": "2026-06-01",
     "month": "2026-06",
     "file": "2026-06/2026-06-01.md",
     "title": "Timeline styling",
-    "excerpt": "Tweaked the daily-log timeline layout and card styling."
+    "excerpt": "Tweaked the daily-log timeline layout and card styling.",
+    "tags": [
+      "daily-log",
+      "design"
+    ]
   },
   {
     "date": "2026-05-31",
     "month": "2026-05",
     "file": "2026-05/2026-05-31.md",
     "title": "Monthly review",
-    "excerpt": "Reviewed the month's output and set goals for June."
+    "excerpt": "Reviewed the month's output and set goals for June.",
+    "tags": []
   },
   {
     "date": "2026-05-30",
     "month": "2026-05",
     "file": "2026-05/2026-05-30.md",
     "title": "Growth photos",
-    "excerpt": "Documented terrarium plant growth with photos."
+    "excerpt": "Documented terrarium plant growth with photos.",
+    "tags": []
   },
   {
     "date": "2026-05-29",
     "month": "2026-05",
     "file": "2026-05/2026-05-29.md",
     "title": "Channel art",
-    "excerpt": "Published a guinea pig short and refreshed the channel art."
+    "excerpt": "Published a guinea pig short and refreshed the channel art.",
+    "tags": []
   },
   {
     "date": "2026-05-28",
     "month": "2026-05",
     "file": "2026-05/2026-05-28.md",
     "title": "Vlog scheduling",
-    "excerpt": "Edited and scheduled a vlog for DavePoland UK Vlogs."
+    "excerpt": "Edited and scheduled a vlog for DavePoland UK Vlogs.",
+    "tags": []
   },
   {
     "date": "2026-05-27",
     "month": "2026-05",
     "file": "2026-05/2026-05-27.md",
     "title": "Lego unboxing",
-    "excerpt": "Filmed an unboxing of a new Lego set."
+    "excerpt": "Filmed an unboxing of a new Lego set.",
+    "tags": []
   },
   {
     "date": "2026-05-26",
     "month": "2026-05",
     "file": "2026-05/2026-05-26.md",
     "title": "Backlog cleanup",
-    "excerpt": "Organized raw footage and cleared the editing backlog."
+    "excerpt": "Organized raw footage and cleared the editing backlog.",
+    "tags": []
   },
   {
     "date": "2026-05-25",
     "month": "2026-05",
     "file": "2026-05/2026-05-25.md",
     "title": "Terrarium reset",
-    "excerpt": "Cleaned the glass and rearranged the terrarium hardscape."
+    "excerpt": "Cleaned the glass and rearranged the terrarium hardscape.",
+    "tags": []
   },
   {
     "date": "2026-05-24",
     "month": "2026-05",
     "file": "2026-05/2026-05-24.md",
     "title": "Stop motion edit",
-    "excerpt": "Edited a stop motion test sequence."
+    "excerpt": "Edited a stop motion test sequence.",
+    "tags": []
   },
   {
     "date": "2026-05-23",
     "month": "2026-05",
     "file": "2026-05/2026-05-23.md",
     "title": "Unity polish",
-    "excerpt": "Refined the Unity prototype and fixed a few rough edges."
+    "excerpt": "Refined the Unity prototype and fixed a few rough edges.",
+    "tags": []
   },
   {
     "date": "2026-05-22",
     "month": "2026-05",
     "file": "2026-05/2026-05-22.md",
     "title": "Coastal shoot",
-    "excerpt": "Scouted and filmed a coastal location for a vlog."
+    "excerpt": "Scouted and filmed a coastal location for a vlog.",
+    "tags": []
   },
   {
     "date": "2026-05-21",
     "month": "2026-05",
     "file": "2026-05/2026-05-21.md",
     "title": "Stop motion scene",
-    "excerpt": "Started setting up a new Lego stop motion scene."
+    "excerpt": "Started setting up a new Lego stop motion scene.",
+    "tags": []
   },
   {
     "date": "2026-05-20",
     "month": "2026-05",
     "file": "2026-05/2026-05-20.md",
     "title": "Publishing calendar",
-    "excerpt": "Planned the publishing calendar for both YouTube channels."
+    "excerpt": "Planned the publishing calendar for both YouTube channels.",
+    "tags": []
   },
   {
     "date": "2026-05-19",
     "month": "2026-05",
     "file": "2026-05/2026-05-19.md",
     "title": "Feeding routine shoot",
-    "excerpt": "Recorded a guinea pig feeding routine for an upcoming video."
+    "excerpt": "Recorded a guinea pig feeding routine for an upcoming video.",
+    "tags": []
   },
   {
     "date": "2026-05-18",
     "month": "2026-05",
     "file": "2026-05/2026-05-18.md",
     "title": "Terrarium fauna",
-    "excerpt": "Added new springtails and checked the terrarium humidity."
+    "excerpt": "Added new springtails and checked the terrarium humidity.",
+    "tags": []
   },
   {
     "date": "2026-05-17",
     "month": "2026-05",
     "file": "2026-05/2026-05-17.md",
     "title": "Tyntesfield, Lego & Guinea Pigs",
-    "excerpt": "Visited Tyntesfield National Trust and collected additional plants for the terrarium project"
+    "excerpt": "Visited Tyntesfield National Trust and collected additional plants for the terrarium project",
+    "tags": []
   },
   {
     "date": "2026-05-16",
     "month": "2026-05",
     "file": "2026-05/2026-05-16.md",
     "title": "Weekend trip edit",
-    "excerpt": "Edited footage from the weekend trip for DavePoland UK Vlogs."
+    "excerpt": "Edited footage from the weekend trip for DavePoland UK Vlogs.",
+    "tags": []
   },
   {
     "date": "2026-05-15",
     "month": "2026-05",
     "file": "2026-05/2026-05-15.md",
     "title": "Build photography",
-    "excerpt": "Photographed a finished Lego build for a thumbnail."
+    "excerpt": "Photographed a finished Lego build for a thumbnail.",
+    "tags": []
   },
   {
     "date": "2026-05-14",
     "month": "2026-05",
     "file": "2026-05/2026-05-14.md",
     "title": "Guinea pig upload",
-    "excerpt": "Published a new guinea pig video and replied to comments."
+    "excerpt": "Published a new guinea pig video and replied to comments.",
+    "tags": []
   },
   {
     "date": "2026-05-13",
     "month": "2026-05",
     "file": "2026-05/2026-05-13.md",
     "title": "Unity movement test",
-    "excerpt": "Experimented with a simple movement mechanic in Unity."
+    "excerpt": "Experimented with a simple movement mechanic in Unity.",
+    "tags": []
   },
   {
     "date": "2026-05-12",
     "month": "2026-05",
     "file": "2026-05/2026-05-12.md",
     "title": "Batch editing",
-    "excerpt": "Batch-edited a week of short clips for both channels."
+    "excerpt": "Batch-edited a week of short clips for both channels.",
+    "tags": []
   },
   {
     "date": "2026-05-11",
     "month": "2026-05",
     "file": "2026-05/2026-05-11.md",
     "title": "Terrarium repotting",
-    "excerpt": "Repotted a fern and trimmed some overgrowth in the terrarium."
+    "excerpt": "Repotted a fern and trimmed some overgrowth in the terrarium.",
+    "tags": []
   },
   {
     "date": "2026-05-10",
     "month": "2026-05",
     "file": "2026-05/2026-05-10.md",
     "title": "City-centre B-roll",
-    "excerpt": "Filmed B-roll around the city centre for an upcoming vlog."
+    "excerpt": "Filmed B-roll around the city centre for an upcoming vlog.",
+    "tags": []
   },
   {
     "date": "2026-05-09",
     "month": "2026-05",
     "file": "2026-05/2026-05-09.md",
     "title": "Stop motion rig test",
-    "excerpt": "Tested the stop motion rig with the guinea pig props."
+    "excerpt": "Tested the stop motion rig with the guinea pig props.",
+    "tags": []
   },
   {
     "date": "2026-05-08",
     "month": "2026-05",
     "file": "2026-05/2026-05-08.md",
     "title": "Lego time-lapse",
-    "excerpt": "Recorded a time-lapse of building a midi-scale Lego set."
+    "excerpt": "Recorded a time-lapse of building a midi-scale Lego set.",
+    "tags": []
   },
   {
     "date": "2026-05-07",
     "month": "2026-05",
     "file": "2026-05/2026-05-07.md",
     "title": "Creative projects and productivity workflow improvements",
-    "excerpt": "Built and expanded a new guinea pig setup"
+    "excerpt": "Built and expanded a new guinea pig setup",
+    "tags": []
   },
   {
     "date": "2026-05-06",
     "month": "2026-05",
     "file": "2026-05/2026-05-06.md",
     "title": "Unity ideas and creative production workflows",
-    "excerpt": "Explored Unity game development ideas and project concepts"
+    "excerpt": "Explored Unity game development ideas and project concepts",
+    "tags": []
   },
   {
     "date": "2026-05-05",
     "month": "2026-05",
     "file": "2026-05/2026-05-05.md",
     "title": "MTG testing and Unity game development learning",
-    "excerpt": "Tested MTG decks and explored gameplay strategies"
+    "excerpt": "Tested MTG decks and explored gameplay strategies",
+    "tags": []
   },
   {
     "date": "2026-05-04",
     "month": "2026-05",
     "file": "2026-05/2026-05-04.md",
     "title": "Guinea pig setups and creative tool planning",
-    "excerpt": "Researched guinea pig habitat setups and enclosure improvements"
+    "excerpt": "Researched guinea pig habitat setups and enclosure improvements",
+    "tags": []
   },
   {
     "date": "2026-05-03",
     "month": "2026-05",
     "file": "2026-05/2026-05-03.md",
     "title": "MTG content and game development research",
-    "excerpt": "Created MTG-related content and explored new gameplay ideas"
+    "excerpt": "Created MTG-related content and explored new gameplay ideas",
+    "tags": []
   },
   {
     "date": "2026-05-02",
     "month": "2026-05",
     "file": "2026-05/2026-05-02.md",
     "title": "App testing coding and branding",
-    "excerpt": "Coding practice and development experiments"
+    "excerpt": "Coding practice and development experiments",
+    "tags": []
   },
   {
     "date": "2026-05-01",
     "month": "2026-05",
     "file": "2026-05/2026-05-01.md",
     "title": "Planned content coding and branding",
-    "excerpt": "Planned YouTube content and researched new video ideas"
+    "excerpt": "Planned YouTube content and researched new video ideas",
+    "tags": []
   },
   {
     "date": "2026-04-30",
     "month": "2026-04",
     "file": "2026-04/2026-04-30.md",
     "title": "Created PrestaShop migration scripts project",
-    "excerpt": "Created repository with PrestaShop migration scripts (1.6 → 8)"
+    "excerpt": "Created repository with PrestaShop migration scripts (1.6 → 8)",
+    "tags": []
   },
   {
     "date": "2026-04-29",
     "month": "2026-04",
     "file": "2026-04/2026-04-29.md",
     "title": "Tested ultra short YouTube formats",
-    "excerpt": "Edited and recorded short videos for next-day publishing"
+    "excerpt": "Edited and recorded short videos for next-day publishing",
+    "tags": []
   },
   {
     "date": "2026-04-28",
     "month": "2026-04",
     "file": "2026-04/2026-04-28.md",
     "title": "Uploaded Guinea Pig editing experiments",
-    "excerpt": "Uploaded new video: [Vet Visit Mites Found in Sam’s Fur](https://www.youtube.com/shorts/UeWyRQzSKa4)"
+    "excerpt": "Uploaded new video: [Vet Visit Mites Found in Sam’s Fur](https://www.youtube.com/shorts/UeWyRQzSKa4)",
+    "tags": []
   },
   {
     "date": "2026-04-27",
     "month": "2026-04",
     "file": "2026-04/2026-04-27.md",
     "title": "Integrated Codex and started keto",
-    "excerpt": "Worked on TART project"
+    "excerpt": "Worked on TART project",
+    "tags": []
   },
   {
     "date": "2026-04-26",
     "month": "2026-04",
     "file": "2026-04/2026-04-26.md",
     "title": "Edited Frodo guinea pig video",
-    "excerpt": "Editing video for [FrodoTheGuineaPig](https://www.youtube.com/@FrodoTheGuineaPig)"
+    "excerpt": "Editing video for [FrodoTheGuineaPig](https://www.youtube.com/@FrodoTheGuineaPig)",
+    "tags": []
   },
   {
     "date": "2026-04-25",
     "month": "2026-04",
     "file": "2026-04/2026-04-25.md",
     "title": "Explored Blaise Castle terrarium materials",
-    "excerpt": "Visited Blaise Castle Estate and spent the day outdoors"
+    "excerpt": "Visited Blaise Castle Estate and spent the day outdoors",
+    "tags": []
   },
   {
     "date": "2026-04-24",
     "month": "2026-04",
     "file": "2026-04/2026-04-24.md",
     "title": "Polished TypewriterX and book title",
-    "excerpt": "New short uploaded to YouTube channel"
+    "excerpt": "New short uploaded to YouTube channel",
+    "tags": []
   },
   {
     "date": "2026-04-23",
     "month": "2026-04",
     "file": "2026-04/2026-04-23.md",
     "title": "Researched viral YouTube branding strategy",
-    "excerpt": "Researched viral Shorts strategies and trends"
+    "excerpt": "Researched viral Shorts strategies and trends",
+    "tags": []
   },
   {
     "date": "2026-04-22",
     "month": "2026-04",
     "file": "2026-04/2026-04-22.md",
     "title": "Advanced TypewriterX with Codex support",
-    "excerpt": "Uploaded new video to MTG David"
+    "excerpt": "Uploaded new video to MTG David",
+    "tags": []
   },
   {
     "date": "2026-04-21",
     "month": "2026-04",
     "file": "2026-04/2026-04-21.md",
     "title": "Renamed channels built guitar setup",
-    "excerpt": "Continued writing the book (new section completed)"
+    "excerpt": "Continued writing the book (new section completed)",
+    "tags": []
   },
   {
     "date": "2026-04-20",
     "month": "2026-04",
     "file": "2026-04/2026-04-20.md",
     "title": "Edited Portishead video soundtrack writing",
-    "excerpt": "Refactored YouTube Shorts from Portishead footage"
+    "excerpt": "Refactored YouTube Shorts from Portishead footage",
+    "tags": []
   },
   {
     "date": "2026-04-19",
     "month": "2026-04",
     "file": "2026-04/2026-04-19.md",
     "title": "Recorded Portishead terrarium family content",
-    "excerpt": "Recorded multiple videos at Portishead beach"
+    "excerpt": "Recorded multiple videos at Portishead beach",
+    "tags": []
   },
   {
     "date": "2026-04-18",
     "month": "2026-04",
     "file": "2026-04/2026-04-18.md",
     "title": "Started Terrarium from UK channel",
-    "excerpt": "Recorded video in Bath for Polish YouTube channel: [Dawid Polakowski](https://www.youtube.com/@dawid.polakowski)"
+    "excerpt": "Recorded video in Bath for Polish YouTube channel: [Dawid Polakowski](https://www.youtube.com/@dawid.polakowski)",
+    "tags": []
   },
   {
     "date": "2026-04-17",
     "month": "2026-04",
     "file": "2026-04/2026-04-17.md",
     "title": "Planned TART reorganized music workspace",
-    "excerpt": "Another part of the book was written."
+    "excerpt": "Another part of the book was written.",
+    "tags": []
   },
   {
     "date": "2026-04-16",
     "month": "2026-04",
     "file": "2026-04/2026-04-16.md",
     "title": "Advanced book game TART architecture",
-    "excerpt": "Continued writing the book after consultation with son"
+    "excerpt": "Continued writing the book after consultation with son",
+    "tags": []
   },
   {
     "date": "2026-04-15",
     "month": "2026-04",
     "file": "2026-04/2026-04-15.md",
     "title": "Tested mathematical game prototype setup",
-    "excerpt": "Prototype of mathematical game created"
+    "excerpt": "Prototype of mathematical game created",
+    "tags": []
   },
   {
     "date": "2026-04-14",
     "month": "2026-04",
     "file": "2026-04/2026-04-14.md",
     "title": "Prepared mathematical gameplay and grains",
-    "excerpt": "Added another part of the book"
+    "excerpt": "Added another part of the book",
+    "tags": []
   },
   {
     "date": "2026-04-13",
     "month": "2026-04",
     "file": "2026-04/2026-04-13.md",
     "title": "Analyzed VMD optimized website game",
-    "excerpt": "Worked on reports from multiple sessions for VMD performance testing"
+    "excerpt": "Worked on reports from multiple sessions for VMD performance testing",
+    "tags": []
   },
   {
     "date": "2026-04-12",
     "month": "2026-04",
     "file": "2026-04/2026-04-12.md",
     "title": "Wrote book prepared cultivation grains",
-    "excerpt": "Wrote a fragment of the book"
+    "excerpt": "Wrote a fragment of the book",
+    "tags": []
   },
   {
     "date": "2026-04-11",
     "month": "2026-04",
     "file": "2026-04/2026-04-11.md",
     "title": "Visited Bath migrated CrystalMind Unity",
-    "excerpt": "Visited Bath including Royal Victoria Park"
+    "excerpt": "Visited Bath including Royal Victoria Park",
+    "tags": []
   },
   {
     "date": "2026-04-10",
     "month": "2026-04",
     "file": "2026-04/2026-04-10.md",
     "title": "Restored guitar planned TypewriterX website",
-    "excerpt": "Started guitar restoration project (adding overdrive circuit and diode modifications)"
+    "excerpt": "Started guitar restoration project (adding overdrive circuit and diode modifications)",
+    "tags": []
   },
   {
     "date": "2026-04-09",
     "month": "2026-04",
     "file": "2026-04/2026-04-09.md",
     "title": "Studied English researched legal writing",
-    "excerpt": "Reached Duolingo English level 130"
+    "excerpt": "Reached Duolingo English level 130",
+    "tags": []
   },
   {
     "date": "2026-04-08",
     "month": "2026-04",
     "file": "2026-04/2026-04-08.md",
     "title": "Wrote book planned app alpha",
-    "excerpt": "Wrote a fragment of the book; another piece was added to the story"
+    "excerpt": "Wrote a fragment of the book; another piece was added to the story",
+    "tags": []
   },
   {
     "date": "2026-04-07",
     "month": "2026-04",
     "file": "2026-04/2026-04-07.md",
     "title": "Refactored VMD and Gegoba prototype",
-    "excerpt": "Decided to use laminate for printing the mathematical game board"
+    "excerpt": "Decided to use laminate for printing the mathematical game board",
+    "tags": []
   },
   {
     "date": "2026-04-06",
     "month": "2026-04",
     "file": "2026-04/2026-04-06.md",
     "title": "Printed game prototypes brainstormed animations",
-    "excerpt": "Continued work on mathematical game; new version planned as a printed board with wooden pawns"
+    "excerpt": "Continued work on mathematical game; new version planned as a printed board with wooden pawns",
+    "tags": []
   },
   {
     "date": "2026-04-05",
     "month": "2026-04",
     "file": "2026-04/2026-04-05.md",
     "title": "Recorded trips built game template",
-    "excerpt": "Visited Aston Estate and Bristol Harbourside"
+    "excerpt": "Visited Aston Estate and Bristol Harbourside",
+    "tags": []
   },
   {
     "date": "2026-04-04",
     "month": "2026-04",
     "file": "2026-04/2026-04-04.md",
     "title": "Edited Cave Story animation shorts",
-    "excerpt": "Started editing Cave Story Part 4 (next episode)"
+    "excerpt": "Started editing Cave Story Part 4 (next episode)",
+    "tags": []
   },
   {
     "date": "2026-04-03",
     "month": "2026-04",
     "file": "2026-04/2026-04-03.md",
     "title": "Uploaded videos across YouTube channels",
-    "excerpt": "new video uloadrd to studioksava"
+    "excerpt": "new video uloadrd to studioksava",
+    "tags": []
   },
   {
     "date": "2026-04-02",
     "month": "2026-04",
     "file": "2026-04/2026-04-02.md",
     "title": "Reviewed KsavaGames Shorts performance strategy",
-    "excerpt": "Continued work on YouTube content strategy for KsavaGames"
+    "excerpt": "Continued work on YouTube content strategy for KsavaGames",
+    "tags": []
   },
   {
     "date": "2026-04-01",
     "month": "2026-04",
     "file": "2026-04/2026-04-01.md",
     "title": "Verified KsavaGames and scheduled Shorts",
-    "excerpt": "YouTube requested account verification — this has been completed, and we are currently waiting for their response."
+    "excerpt": "YouTube requested account verification — this has been completed, and we are currently waiting for their response.",
+    "tags": []
   },
   {
     "date": "2026-03-31",
     "month": "2026-03",
     "file": "2026-03/2026-03-31.md",
     "title": "Prototyped math game reactivated channel",
-    "excerpt": "Mathematical game prototype printed — results look good, just needs some tuning."
+    "excerpt": "Mathematical game prototype printed — results look good, just needs some tuning.",
+    "tags": []
   },
   {
     "date": "2026-03-30",
     "month": "2026-03",
     "file": "2026-03/2026-03-30.md",
     "title": "Updated logs videos Prime Renovations",
-    "excerpt": "Logs updated"
+    "excerpt": "Logs updated",
+    "tags": []
   },
   {
     "date": "2026-03-29",
     "month": "2026-03",
     "file": "2026-03/2026-03-29.md",
     "title": "Recorded Tyntesfield LEGO Shorts success",
-    "excerpt": "Visited Tyntesfield (National Trust) — recorded several videos"
+    "excerpt": "Visited Tyntesfield (National Trust) — recorded several videos",
+    "tags": []
   },
   {
     "date": "2026-03-28",
     "month": "2026-03",
     "file": "2026-03/2026-03-28.md",
     "title": "Planned new card game repository",
-    "excerpt": "I was working on a new version of a card game. A new repository will be created next week."
+    "excerpt": "I was working on a new version of a card game. A new repository will be created next week.",
+    "tags": []
   },
   {
     "date": "2026-03-27",
     "month": "2026-03",
     "file": "2026-03/2026-03-27.md",
     "title": "Drafted book drawing composition concepts",
-    "excerpt": "I was working on a book, and this drawing was created as part of an early draft—exploring forms, closures, and composition before refining the final…"
+    "excerpt": "I was working on a book, and this drawing was created as part of an early draft—exploring forms, closures, and composition before refining the final…",
+    "tags": []
   },
   {
     "date": "2026-03-26",
     "month": "2026-03",
     "file": "2026-03/2026-03-26.md",
     "title": "Vlog edit",
-    "excerpt": "Edited a vlog and prepared the thumbnail for DavePoland UK Vlogs."
+    "excerpt": "Edited a vlog and prepared the thumbnail for DavePoland UK Vlogs.",
+    "tags": []
   },
   {
     "date": "2026-03-25",
     "month": "2026-03",
     "file": "2026-03/2026-03-25.md",
     "title": "Terrarium tuning",
-    "excerpt": "Adjusted the lighting and misting schedule for the terrarium."
+    "excerpt": "Adjusted the lighting and misting schedule for the terrarium.",
+    "tags": []
   },
   {
     "date": "2026-03-24",
     "month": "2026-03",
     "file": "2026-03/2026-03-24.md",
     "title": "Configured DNS mail wrote book",
-    "excerpt": "working with DNS for [KATARZYNA ROTT](https://www.silverclock.uk/)"
+    "excerpt": "working with DNS for [KATARZYNA ROTT](https://www.silverclock.uk/)",
+    "tags": []
   },
   {
     "date": "2026-03-23",
     "month": "2026-03",
     "file": "2026-03/2026-03-23.md",
     "title": "Published daily log GitHub page",
-    "excerpt": "update Log system and creating a page on GH"
+    "excerpt": "update Log system and creating a page on GH",
+    "tags": []
   },
   {
     "date": "2026-03-22",
     "month": "2026-03",
     "file": "2026-03/2026-03-22.md",
     "title": "Built Forest of Ideas portal",
-    "excerpt": "Built as a static website (HTML/CSS/JS) hosted on GitHub Pages"
+    "excerpt": "Built as a static website (HTML/CSS/JS) hosted on GitHub Pages",
+    "tags": []
   },
   {
     "date": "2026-03-21",
     "month": "2026-03",
     "file": "2026-03/2026-03-21.md",
     "title": "Recorded Leigh Woods terrarium videos",
-    "excerpt": "🌿 Spent time outdoors at National Trust – Leigh Woods"
+    "excerpt": "🌿 Spent time outdoors at National Trust – Leigh Woods",
+    "tags": []
   },
   {
     "date": "2026-03-20",
     "month": "2026-03",
     "file": "2026-03/2026-03-20.md",
     "title": "Planned open artist database project",
-    "excerpt": "Starting a conversation about building a database of artists — with plans to include multiple artists and launch an open-source project in the near f…"
+    "excerpt": "Starting a conversation about building a database of artists — with plans to include multiple artists and launch an open-source project in the near f…",
+    "tags": []
   },
   {
     "date": "2026-03-19",
     "month": "2026-03",
     "file": "2026-03/2026-03-19.md",
     "title": "Expanded pet portrait SEO pages",
-    "excerpt": "Update the structure of the service page:"
+    "excerpt": "Update the structure of the service page:",
+    "tags": []
   },
   {
     "date": "2026-03-18",
     "month": "2026-03",
     "file": "2026-03/2026-03-18.md",
     "title": "Prepared pet portrait SEO strategy",
-    "excerpt": "SEO Preparation Update"
+    "excerpt": "SEO Preparation Update",
+    "tags": []
   },
   {
     "date": "2026-03-17",
     "month": "2026-03",
     "file": "2026-03/2026-03-17.md",
     "title": "Guinea pig short",
-    "excerpt": "Edited and published a short guinea pig clip."
+    "excerpt": "Edited and published a short guinea pig clip.",
+    "tags": []
   },
   {
     "date": "2026-03-16",
     "month": "2026-03",
     "file": "2026-03/2026-03-16.md",
     "title": "Created book repo TypewriterX drafts",
-    "excerpt": "repo created for my book invincible-lord-book"
+    "excerpt": "repo created for my book invincible-lord-book",
+    "tags": []
   },
   {
     "date": "2026-03-15",
     "month": "2026-03",
     "file": "2026-03/2026-03-15.md",
     "title": "Footage housekeeping",
-    "excerpt": "Reorganized the footage folders and tidied the backup routine."
+    "excerpt": "Reorganized the footage folders and tidied the backup routine.",
+    "tags": []
   },
   {
     "date": "2026-03-14",
     "month": "2026-03",
     "file": "2026-03/2026-03-14.md",
     "title": "Unity prototype setup",
-    "excerpt": "Sketched a small game idea and set up a fresh Unity project."
+    "excerpt": "Sketched a small game idea and set up a fresh Unity project.",
+    "tags": []
   },
   {
     "date": "2026-03-13",
     "month": "2026-03",
     "file": "2026-03/2026-03-13.md",
     "title": "Created Invincible Lord game repository",
-    "excerpt": "repo with new project created, new game invincible-lord-game"
+    "excerpt": "repo with new project created, new game invincible-lord-game",
+    "tags": []
   },
   {
     "date": "2026-03-12",
     "month": "2026-03",
     "file": "2026-03/2026-03-12.md",
     "title": "Planned Invincible Lord game systems",
-    "excerpt": "Set up the Invincible Lord game repository on GitHub and created the initial project documentation (README)."
+    "excerpt": "Set up the Invincible Lord game repository on GitHub and created the initial project documentation (README).",
+    "tags": []
   },
   {
     "date": "2026-03-11",
     "month": "2026-03",
     "file": "2026-03/2026-03-11.md",
     "title": "Updated TypewriterX Moxfield deck editor",
-    "excerpt": "I created last week a profile on Moxfield to store and manage my Magic: The Gathering decks."
+    "excerpt": "I created last week a profile on Moxfield to store and manage my Magic: The Gathering decks.",
+    "tags": []
   },
   {
     "date": "2026-03-10",
     "month": "2026-03",
     "file": "2026-03/2026-03-10.md",
     "title": "Split TypewriterX editing and typewriting",
-    "excerpt": "I decided to split the TypewriterX functionality into two separate parts: typewriting and editing."
+    "excerpt": "I decided to split the TypewriterX functionality into two separate parts: typewriting and editing.",
+    "tags": []
   },
   {
     "date": "2026-03-09",
     "month": "2026-03",
     "file": "2026-03/2026-03-09.md",
     "title": "Lego Star Wars build",
-    "excerpt": "Started building a new Lego Star Wars set for an unboxing video."
+    "excerpt": "Started building a new Lego Star Wars set for an unboxing video.",
+    "tags": []
   },
   {
     "date": "2026-03-08",
     "month": "2026-03",
     "file": "2026-03/2026-03-08.md",
     "title": "Location scouting",
-    "excerpt": "Scouted a local park as a filming location for DavePoland UK Vlogs."
+    "excerpt": "Scouted a local park as a filming location for DavePoland UK Vlogs.",
+    "tags": []
   },
   {
     "date": "2026-03-07",
     "month": "2026-03",
     "file": "2026-03/2026-03-07.md",
     "title": "Guinea pig feeding footage",
-    "excerpt": "Filmed feeding-time footage for the Frodo And Sam Guinea Pigs channel."
+    "excerpt": "Filmed feeding-time footage for the Frodo And Sam Guinea Pigs channel.",
+    "tags": []
   },
   {
     "date": "2026-03-06",
     "month": "2026-03",
     "file": "2026-03/2026-03-06.md",
     "title": "Started TypewriterX Timecorder redesign planning",
-    "excerpt": "All day yesterday I had CGI meetings — the same story as usual. However, I’ve started a new project around TypewriterX functionality and a new design…"
+    "excerpt": "All day yesterday I had CGI meetings — the same story as usual. However, I’ve started a new project around TypewriterX functionality and a new design…",
+    "tags": []
   },
   {
     "date": "2026-03-05",
     "month": "2026-03",
     "file": "2026-03/2026-03-05.md",
     "title": "Terrarium base layer",
-    "excerpt": "Sourced moss and small plants and laid the terrarium base layer."
+    "excerpt": "Sourced moss and small plants and laid the terrarium base layer.",
+    "tags": []
   },
   {
     "date": "2026-03-04",
     "month": "2026-03",
     "file": "2026-03/2026-03-04.md",
     "title": "Created daily log repository foundation",
-    "excerpt": "Daili log repo created"
+    "excerpt": "Daili log repo created",
+    "tags": []
   },
   {
     "date": "2026-03-03",
     "month": "2026-03",
     "file": "2026-03/2026-03-03.md",
     "title": "Project cleanup and AI demo",
-    "excerpt": "Learned about tokenization and context windows."
+    "excerpt": "Learned about tokenization and context windows.",
+    "tags": []
   },
   {
     "date": "2026-03-01",
     "month": "2026-03",
     "file": "2026-03/2026-03-01.md",
     "title": "Daily-log polish and AI notes",
-    "excerpt": "Polished the daily-log responsive layout."
+    "excerpt": "Polished the daily-log responsive layout.",
+    "tags": []
   },
   {
     "date": "2026-02-28",
     "month": "2026-02",
     "file": "2026-02/2026-02-28.md",
     "title": "Monthly writing review",
-    "excerpt": "Reviewed the month's writing progress and planned March."
+    "excerpt": "Reviewed the month's writing progress and planned March.",
+    "tags": []
   },
   {
     "date": "2026-02-27",
     "month": "2026-02",
     "file": "2026-02/2026-02-27.md",
     "title": "Ending outline",
-    "excerpt": "Outlined the book's ending and remaining chapters."
+    "excerpt": "Outlined the book's ending and remaining chapters.",
+    "tags": []
   },
   {
     "date": "2026-02-26",
     "month": "2026-02",
     "file": "2026-02/2026-02-26.md",
     "title": "Proofreading pass",
-    "excerpt": "Edited and proofread the latest chapters."
+    "excerpt": "Edited and proofread the latest chapters.",
+    "tags": []
   },
   {
     "date": "2026-02-25",
     "month": "2026-02",
     "file": "2026-02/2026-02-25.md",
     "title": "Act-two climax",
-    "excerpt": "Drafted chapter eight and the act-two climax."
+    "excerpt": "Drafted chapter eight and the act-two climax.",
+    "tags": []
   },
   {
     "date": "2026-02-24",
     "month": "2026-02",
     "file": "2026-02/2026-02-24.md",
     "title": "Unity sketch",
-    "excerpt": "Sketched a small game prototype idea in Unity."
+    "excerpt": "Sketched a small game prototype idea in Unity.",
+    "tags": []
   },
   {
     "date": "2026-02-23",
     "month": "2026-02",
     "file": "2026-02/2026-02-23.md",
     "title": "Chapter seven draft",
-    "excerpt": "Wrote chapter seven of the book."
+    "excerpt": "Wrote chapter seven of the book.",
+    "tags": []
   },
   {
     "date": "2026-02-22",
     "month": "2026-02",
     "file": "2026-02/2026-02-22.md",
     "title": "First-act revision",
-    "excerpt": "Revised the first act of the book for consistency."
+    "excerpt": "Revised the first act of the book for consistency.",
+    "tags": []
   },
   {
     "date": "2026-02-21",
     "month": "2026-02",
     "file": "2026-02/2026-02-21.md",
     "title": "Guinea pig clip",
-    "excerpt": "Edited and published a guinea pig clip."
+    "excerpt": "Edited and published a guinea pig clip.",
+    "tags": []
   },
   {
     "date": "2026-02-20",
     "month": "2026-02",
     "file": "2026-02/2026-02-20.md",
     "title": "Chapter six draft",
-    "excerpt": "Drafted chapter six of the book."
+    "excerpt": "Drafted chapter six of the book.",
+    "tags": []
   },
   {
     "date": "2026-02-19",
     "month": "2026-02",
     "file": "2026-02/2026-02-19.md",
     "title": "Subplot rework",
-    "excerpt": "Reworked a subplot and a character motivation."
+    "excerpt": "Reworked a subplot and a character motivation.",
+    "tags": []
   },
   {
     "date": "2026-02-18",
     "month": "2026-02",
     "file": "2026-02/2026-02-18.md",
     "title": "Chapter five draft",
-    "excerpt": "Wrote chapter five of the book."
+    "excerpt": "Wrote chapter five of the book.",
+    "tags": []
   },
   {
     "date": "2026-02-17",
     "month": "2026-02",
     "file": "2026-02/2026-02-17.md",
     "title": "Lego time-lapse",
-    "excerpt": "Built a Lego set and recorded a short time-lapse."
+    "excerpt": "Built a Lego set and recorded a short time-lapse.",
+    "tags": []
   },
   {
     "date": "2026-02-16",
     "month": "2026-02",
     "file": "2026-02/2026-02-16.md",
     "title": "Dialogue pass",
-    "excerpt": "Edited dialogue across the early chapters."
+    "excerpt": "Edited dialogue across the early chapters.",
+    "tags": []
   },
   {
     "date": "2026-02-15",
     "month": "2026-02",
     "file": "2026-02/2026-02-15.md",
     "title": "Chapter four draft",
-    "excerpt": "Drafted chapter four of the book."
+    "excerpt": "Drafted chapter four of the book.",
+    "tags": []
   },
   {
     "date": "2026-02-14",
     "month": "2026-02",
     "file": "2026-02/2026-02-14.md",
     "title": "Midpoint outline",
-    "excerpt": "Outlined the book's midpoint turning point."
+    "excerpt": "Outlined the book's midpoint turning point.",
+    "tags": []
   },
   {
     "date": "2026-02-13",
     "month": "2026-02",
     "file": "2026-02/2026-02-13.md",
     "title": "Location scouting",
-    "excerpt": "Scouted a filming location for DavePoland UK Vlogs."
+    "excerpt": "Scouted a filming location for DavePoland UK Vlogs.",
+    "tags": []
   },
   {
     "date": "2026-02-12",
     "month": "2026-02",
     "file": "2026-02/2026-02-12.md",
     "title": "Chapter three draft",
-    "excerpt": "Wrote chapter three of the book."
+    "excerpt": "Wrote chapter three of the book.",
+    "tags": []
   },
   {
     "date": "2026-02-11",
     "month": "2026-02",
     "file": "2026-02/2026-02-11.md",
     "title": "Setting research",
-    "excerpt": "Researched background details for the book's setting."
+    "excerpt": "Researched background details for the book's setting.",
+    "tags": []
   },
   {
     "date": "2026-02-10",
     "month": "2026-02",
     "file": "2026-02/2026-02-10.md",
     "title": "Early revisions",
-    "excerpt": "Revised chapters one and two for pacing."
+    "excerpt": "Revised chapters one and two for pacing.",
+    "tags": []
   },
   {
     "date": "2026-02-09",
     "month": "2026-02",
     "file": "2026-02/2026-02-09.md",
     "title": "Terrarium check",
-    "excerpt": "Checked the terrarium humidity and trimmed some plants."
+    "excerpt": "Checked the terrarium humidity and trimmed some plants.",
+    "tags": []
   },
   {
     "date": "2026-02-08",
     "month": "2026-02",
     "file": "2026-02/2026-02-08.md",
     "title": "Chapter two draft",
-    "excerpt": "Drafted chapter two of the book."
+    "excerpt": "Drafted chapter two of the book.",
+    "tags": []
   },
   {
     "date": "2026-02-07",
     "month": "2026-02",
     "file": "2026-02/2026-02-07.md",
     "title": "World-building notes",
-    "excerpt": "Wrote setting details and world-building notes for the book."
+    "excerpt": "Wrote setting details and world-building notes for the book.",
+    "tags": []
   },
   {
     "date": "2026-02-06",
     "month": "2026-02",
     "file": "2026-02/2026-02-06.md",
     "title": "Chapter one draft",
-    "excerpt": "Continued chapter one and tightened the opening pages."
+    "excerpt": "Continued chapter one and tightened the opening pages.",
+    "tags": []
   },
   {
     "date": "2026-02-05",
     "month": "2026-02",
     "file": "2026-02/2026-02-05.md",
     "title": "Guinea pig footage",
-    "excerpt": "Filmed feeding-time footage for the Frodo And Sam Guinea Pigs channel."
+    "excerpt": "Filmed feeding-time footage for the Frodo And Sam Guinea Pigs channel.",
+    "tags": []
   },
   {
     "date": "2026-02-04",
     "month": "2026-02",
     "file": "2026-02/2026-02-04.md",
     "title": "Opening scene",
-    "excerpt": "Drafted the opening scene of chapter one."
+    "excerpt": "Drafted the opening scene of chapter one.",
+    "tags": []
   },
   {
     "date": "2026-02-03",
     "month": "2026-02",
     "file": "2026-02/2026-02-03.md",
     "title": "Character sketches",
-    "excerpt": "Wrote character sketches for the main cast of the book."
+    "excerpt": "Wrote character sketches for the main cast of the book.",
+    "tags": []
   },
   {
     "date": "2026-02-02",
     "month": "2026-02",
     "file": "2026-02/2026-02-02.md",
     "title": "Chapter structure",
-    "excerpt": "Drafted the book's chapter breakdown and rough structure."
+    "excerpt": "Drafted the book's chapter breakdown and rough structure.",
+    "tags": []
   },
   {
     "date": "2026-02-01",
     "month": "2026-02",
     "file": "2026-02/2026-02-01.md",
     "title": "New book outline",
-    "excerpt": "Started outlining a new book — premise, tone, and core themes."
+    "excerpt": "Started outlining a new book — premise, tone, and core themes.",
+    "tags": []
   }
 ]
