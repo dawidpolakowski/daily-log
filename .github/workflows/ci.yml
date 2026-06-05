@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerate the log index
+        run: node scripts/build.js
+
+      - name: Ensure logs.json is committed and up to date
+        run: |
+          if ! git diff --quiet -- logs/logs.json; then
+            echo "::error::logs.json is out of date. Run 'npm run build' and commit the result."
+            git --no-pager diff -- logs/logs.json
+            exit 1
+          fi
+          echo "logs.json is up to date."

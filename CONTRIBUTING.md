@@ -24,10 +24,10 @@ Rebuild the index (after editing titles, tags, or content):
 npm run build
 ```
 
-Preview the site locally with any static server, e.g.:
+Preview the site locally with the built-in zero-dependency server:
 
 ```bash
-npx serve .
+npm run serve
 # then open http://localhost:3000
 ```
 

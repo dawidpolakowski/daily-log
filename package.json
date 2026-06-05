@@ -1,20 +1,34 @@
 {
   "name": "daily-log",
   "version": "1.0.0",
-  "description": "Automated daily logging system published via GitHub Pages.",
+  "description": "A simple, automated daily logging system — Markdown logs published as a static site via GitHub Pages.",
   "type": "module",
   "license": "MIT",
-  "author": "Dawid Polakowski",
+  "author": "Dawid Polakowski <dawidpolakowski@gmail.com> (https://github.com/dawidpolakowski)",
   "homepage": "https://dawidpolakowski.github.io/daily-log/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dawidpolakowski/daily-log.git"
+    "url": "git+https://github.com/dawidpolakowski/daily-log.git"
   },
+  "bugs": {
+    "url": "https://github.com/dawidpolakowski/daily-log/issues"
+  },
+  "keywords": [
+    "daily-log",
+    "journal",
+    "devlog",
+    "markdown",
+    "static-site",
+    "github-pages",
+    "notes",
+    "zero-dependency"
+  ],
   "engines": {
     "node": ">=18"
   },
   "scripts": {
     "new": "node scripts/new.js",
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "serve": "node scripts/serve.js"
   }
 }

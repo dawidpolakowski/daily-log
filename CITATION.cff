@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this project, please cite it as below."
+title: "Daily Log"
+abstract: "A simple, automated daily logging system — Markdown logs published as a static site via GitHub Pages."
+type: software
+authors:
+  - family-names: "Polakowski"
+    given-names: "Dawid"
+repository-code: "https://github.com/dawidpolakowski/daily-log"
+url: "https://dawidpolakowski.github.io/daily-log/"
+license: MIT

@@ -1,0 +1,13 @@
+# Normalize line endings to LF for all text files (kills CRLF churn).
+* text=auto eol=lf
+
+# Treat these as binary.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.zip binary
+
+# Generated file — collapse in PR diffs.
+logs/logs.json linguist-generated=true
