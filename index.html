@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Daily Logs</title>
+  <meta name="description" content="A timeline of daily engineering and project logs, grouped by month." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -13,70 +14,86 @@
 </head>
 
 <body>
-  <div class="app-shell">
-    <header class="site-header">
+  <header class="site-header">
+    <div class="nav-inner">
       <a class="brand" href="index.html" aria-label="Daily Logs home">
-        <span class="brand-mark">DL</span>
-        <span>
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="21.5" fill="none" stroke="#fff" stroke-width="2.5" />
+          <path d="M18 24 L31 15 M18 24 L31 33" stroke="#fff" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="17.5" cy="24" r="3.4" fill="#fff" />
+          <circle cx="31.5" cy="15" r="3.4" fill="#fff" />
+          <circle cx="31.5" cy="33" r="3.4" fill="#fff" />
+        </svg>
+        <span class="brand-text">
           <strong>Daily Logs</strong>
           <small>Project journal</small>
         </span>
       </a>
 
-      <a class="ghost-link" href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">
-        View Repo
-      </a>
-    </header>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Timeline</a>
+        <a href="https://github.com/dawidpolakowski/daily-log#readme" target="_blank" rel="noreferrer">Docs</a>
+        <a class="nav-cta" href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <section class="hero">
-        <div>
-          <p class="eyebrow">Markdown logs, shipped as a static site</p>
-          <h1>Track the work, keep the signal.</h1>
-          <p class="hero-copy">
-            A clean timeline of daily engineering notes, grouped by month and ready for GitHub Pages.
-          </p>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Markdown logs · shipped as a static site</p>
+      <h1>Track the work. Keep the signal.</h1>
+      <p class="hero-copy">
+        A clean, searchable timeline of daily engineering notes — grouped by month, written in
+        Markdown, and published automatically.
+      </p>
+
+      <div class="stats" aria-label="Log statistics">
+        <div class="stat">
+          <span class="num" id="total-logs">0</span>
+          <span class="lbl">Total logs</span>
         </div>
-
-        <div class="hero-panel" aria-label="Log statistics">
-          <span>Total logs</span>
-          <strong id="total-logs">0</strong>
-          <small id="latest-log">Loading latest entry...</small>
+        <div class="stat">
+          <span class="num" id="month-count">0</span>
+          <span class="lbl">Months tracked</span>
         </div>
-      </section>
-
-      <section class="toolbar" aria-label="Log filters">
-        <label class="search-field">
-          <span>Search logs</span>
-          <input id="search-input" type="search" placeholder="Search by title, date, or month" autocomplete="off">
-        </label>
-
-        <label class="select-field">
-          <span>Month</span>
-          <select id="month-filter">
-            <option value="all">All months</option>
-          </select>
-        </label>
-      </section>
-
-      <section class="content-section">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Timeline</p>
-            <h2>Recent logs</h2>
-          </div>
-          <span id="result-count">Loading...</span>
+        <div class="stat">
+          <span class="num" id="latest-log">—</span>
+          <span class="lbl">Latest entry</span>
         </div>
+      </div>
+    </section>
 
-        <div id="logs" class="log-grid" aria-live="polite"></div>
-        <nav id="pagination" class="pagination" aria-label="Logs pagination"></nav>
-      </section>
-    </main>
+    <section class="toolbar" aria-label="Log filters">
+      <label class="search-field">
+        <span>Search logs</span>
+        <input id="search-input" type="search" placeholder="Search by title, date, or month" autocomplete="off">
+      </label>
 
-    <footer class="site-footer">
+      <label class="select-field">
+        <span>Month</span>
+        <select id="month-filter">
+          <option value="all">All months</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="content-section">
+      <div class="section-heading">
+        <h2>Recent logs</h2>
+        <span id="result-count">Loading…</span>
+      </div>
+
+      <div id="logs" class="log-grid" aria-live="polite"></div>
+      <nav id="pagination" class="pagination" aria-label="Logs pagination"></nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
       <span id="build-info">Build: __BUILD_ID__</span>
-    </footer>
-  </div>
+      <a href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">github.com/dawidpolakowski/daily-log</a>
+    </div>
+  </footer>
 
   <script src="script.js?v=__BUILD_ID__"></script>
 </body>

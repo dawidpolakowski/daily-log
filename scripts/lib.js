@@ -43,6 +43,23 @@ export function extractTitle(markdown) {
   return null;
 }
 
+/** First meaningful line of body text, used as a card preview. */
+export function extractExcerpt(markdown, maxLength = 150) {
+  for (const raw of markdown.split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line || line.startsWith('#')) continue;       // blank lines / headings
+    if (/^\d{4}-\d{2}-\d{2}$/.test(line)) continue;     // the bare date line
+    if (line === '-') continue;                         // empty bullet
+
+    const text = line.replace(/^[-*]\s+/, '').replace(/[*`_>]/g, '').trim();
+    if (!text) continue;
+
+    return text.length > maxLength ? `${text.slice(0, maxLength - 1).trimEnd()}…` : text;
+  }
+
+  return '';
+}
+
 async function exists(target) {
   try {
     await access(target);
@@ -105,6 +122,7 @@ export async function buildIndex() {
         month: month.name,
         file: `${month.name}/${file}`,
         title: extractTitle(markdown) || `Daily Log - ${dateKey}`,
+        excerpt: extractExcerpt(markdown),
       });
     }
   }

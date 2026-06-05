@@ -1,4 +1,4 @@
-const PAGE_SIZE = 10;
+const PAGE_SIZE = 9;
 const LOGS_INDEX_URL = 'logs/logs.json';
 
 const state = {
@@ -15,28 +15,24 @@ const elements = {
   monthFilter: document.getElementById('month-filter'),
   resultCount: document.getElementById('result-count'),
   totalLogs: document.getElementById('total-logs'),
+  monthCount: document.getElementById('month-count'),
   latestLog: document.getElementById('latest-log'),
 };
 
 function formatMonth(monthKey) {
   const [year, month] = monthKey.split('-').map(Number);
-  const date = new Date(year, month - 1);
-
-  return new Intl.DateTimeFormat('en', {
-    month: 'long',
-    year: 'numeric',
-  }).format(date);
+  return new Intl.DateTimeFormat('en', { month: 'long', year: 'numeric' })
+    .format(new Date(year, month - 1));
 }
 
 function formatDate(dateKey) {
   const [year, month, day] = dateKey.split('-').map(Number);
-  const date = new Date(year, month - 1, day);
-
   return new Intl.DateTimeFormat('en', {
+    weekday: 'short',
     day: 'numeric',
     month: 'short',
     year: 'numeric',
-  }).format(date);
+  }).format(new Date(year, month - 1, day));
 }
 
 function normalizeLog(log) {
@@ -48,6 +44,7 @@ function normalizeLog(log) {
     date,
     month,
     title: log.title || `Daily Log - ${date}`,
+    excerpt: log.excerpt || '',
   };
 }
 
@@ -56,8 +53,8 @@ function getFilteredLogs() {
 
   return state.logs.filter((log) => {
     const matchesMonth = state.month === 'all' || log.month === state.month;
-    const searchableText = `${log.title} ${log.date} ${formatMonth(log.month)}`.toLowerCase();
-    const matchesSearch = !query || searchableText.includes(query);
+    const haystack = `${log.title} ${log.excerpt} ${log.date} ${formatMonth(log.month)}`.toLowerCase();
+    const matchesSearch = !query || haystack.includes(query);
 
     return matchesMonth && matchesSearch;
   });
@@ -65,7 +62,6 @@ function getFilteredLogs() {
 
 function getPageLogs(logs) {
   const start = (state.currentPage - 1) * PAGE_SIZE;
-
   return logs.slice(start, start + PAGE_SIZE);
 }
 
@@ -84,13 +80,39 @@ function createLogCard(log) {
   const title = document.createElement('h3');
   title.textContent = log.title;
 
-  const meta = document.createElement('p');
-  meta.textContent = formatDate(log.date);
+  const excerpt = document.createElement('p');
+  excerpt.className = 'log-excerpt';
+  excerpt.textContent = log.excerpt;
 
-  link.append(month, title, meta);
+  const foot = document.createElement('div');
+  foot.className = 'log-foot';
+
+  const date = document.createElement('span');
+  date.textContent = formatDate(log.date);
+
+  const read = document.createElement('span');
+  read.className = 'read';
+  read.textContent = 'Read →';
+
+  foot.append(date, read);
+  link.append(month, title);
+  if (log.excerpt) link.appendChild(excerpt);
+  link.appendChild(foot);
   article.appendChild(link);
 
   return article;
+}
+
+function renderSkeletons(count = 6) {
+  elements.logs.replaceChildren(
+    ...Array.from({ length: count }, () => {
+      const card = document.createElement('div');
+      card.className = 'skeleton';
+      card.innerHTML = '<span class="s1"></span><span class="s2"></span>'
+        + '<span class="s3"></span><span class="s4"></span><span class="s5"></span>';
+      return card;
+    }),
+  );
 }
 
 function renderLogs() {
@@ -114,6 +136,7 @@ function renderLogs() {
 
 function renderPagination(totalItems) {
   const totalPages = Math.max(1, Math.ceil(totalItems / PAGE_SIZE));
+  state.currentPage = Math.min(state.currentPage, totalPages);
 
   elements.pagination.replaceChildren();
   elements.pagination.hidden = totalPages <= 1;
@@ -125,6 +148,7 @@ function renderPagination(totalItems) {
   previousButton.addEventListener('click', () => {
     state.currentPage -= 1;
     renderLogs();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   const nextButton = document.createElement('button');
@@ -134,6 +158,7 @@ function renderPagination(totalItems) {
   nextButton.addEventListener('click', () => {
     state.currentPage += 1;
     renderLogs();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 
   const pageInfo = document.createElement('span');
@@ -155,20 +180,19 @@ function renderMonthFilter() {
 
 function renderStats() {
   const [latestLog] = state.logs;
+  const months = new Set(state.logs.map((log) => log.month));
 
   elements.totalLogs.textContent = state.logs.length;
-  elements.latestLog.textContent = latestLog
-    ? `Latest: ${formatDate(latestLog.date)}`
-    : 'No logs yet';
+  if (elements.monthCount) elements.monthCount.textContent = months.size;
+  elements.latestLog.textContent = latestLog ? formatDate(latestLog.date) : '—';
 }
 
 async function loadLogs() {
+  renderSkeletons();
+
   try {
     const response = await fetch(LOGS_INDEX_URL);
-
-    if (!response.ok) {
-      throw new Error(`Unable to fetch ${LOGS_INDEX_URL}`);
-    }
+    if (!response.ok) throw new Error(`Unable to fetch ${LOGS_INDEX_URL}`);
 
     const logs = await response.json();
     state.logs = logs.map(normalizeLog);

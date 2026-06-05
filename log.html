@@ -8,36 +8,41 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css/github-markdown.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@5/github-markdown-light.min.css">
   <link rel="stylesheet" href="style.css" />
   <script src="https://cdn.jsdelivr.net/npm/marked@15/marked.min.js"></script>
 </head>
 
 <body>
-  <div class="app-shell">
-    <header class="site-header">
+  <header class="site-header">
+    <div class="nav-inner">
       <a class="brand" href="index.html" aria-label="Daily Logs home">
-        <span class="brand-mark">DL</span>
-        <span>
+        <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+          <circle cx="24" cy="24" r="21.5" fill="none" stroke="#fff" stroke-width="2.5" />
+          <path d="M18 24 L31 15 M18 24 L31 33" stroke="#fff" stroke-width="2.4" stroke-linecap="round" />
+          <circle cx="17.5" cy="24" r="3.4" fill="#fff" />
+          <circle cx="31.5" cy="15" r="3.4" fill="#fff" />
+          <circle cx="31.5" cy="33" r="3.4" fill="#fff" />
+        </svg>
+        <span class="brand-text">
           <strong>Daily Logs</strong>
           <small>Log viewer</small>
         </span>
       </a>
 
-      <div class="header-actions">
-        <a class="ghost-link" href="index.html">Back to logs</a>
-        <a class="ghost-link" href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">
-          View Repo
-        </a>
-      </div>
-    </header>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Timeline</a>
+        <a class="nav-cta" href="https://github.com/dawidpolakowski/daily-log" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-      <article class="reader">
-        <div id="content" class="markdown-body">Loading...</div>
-      </article>
-    </main>
-  </div>
+  <main>
+    <article class="reader">
+      <a class="reader-back" href="index.html">&larr; Back to all logs</a>
+      <div id="content" class="markdown-body">Loading…</div>
+    </article>
+  </main>
 
   <script>
     const content = document.getElementById('content');
@@ -63,7 +68,7 @@
         .then((markdown) => {
           content.innerHTML = marked.parse(markdown);
           const heading = content.querySelector('h1');
-          if (heading) document.title = heading.textContent;
+          if (heading) document.title = `${heading.textContent} · Daily Logs`;
         })
         .catch(() => {
           content.textContent = 'Failed to load log.';
