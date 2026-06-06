@@ -27,6 +27,7 @@ automatically. No framework, no build pipeline, **zero runtime dependencies**.
 - [Features](#features)
 - [Screenshots](#screenshots)
 - [Quick Start](#quick-start)
+- [Make It Your Own](#make-it-your-own)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [How It Works](#how-it-works)
@@ -59,13 +60,55 @@ automatically. No framework, no build pipeline, **zero runtime dependencies**.
 
 > Requires **Node.js 18+**. There are no npm dependencies to install.
 
+Want to look around the demo first?
+
 ```bash
 git clone https://github.com/dawidpolakowski/daily-log.git
 cd daily-log
+npm run serve                   # preview the demo at http://localhost:3000
+```
 
+## Make It Your Own
+
+This repository is published with its author's own logs as a live demo. When you
+start your **own** journal you'll want a clean slate — these steps separate your
+logs from the demo content so you never commit someone else's entries.
+
+**1. Get your own copy.** Click **[Use this template](https://github.com/dawidpolakowski/daily-log/generate)**
+on GitHub (recommended — gives you a fresh history), or fork the repo. Then clone
+your copy:
+
+```bash
+git clone https://github.com/<you>/<your-repo>.git
+cd <your-repo>
+```
+
+**2. Clear the demo logs.** One command removes every existing entry, resets the
+index, and seeds a single "welcome" log dated today:
+
+```bash
+npm run reset            # clears logs/ and seeds a welcome entry
+# npm run reset -- --empty   # ...or start with no entries at all
+```
+
+> `reset` deletes everything under `logs/`. It asks for confirmation when run
+> interactively; pass `--yes` to skip the prompt in scripts.
+
+**3. Write your first real entry and preview it:**
+
+```bash
 npm run new -- "My first log"   # create today's entry
 npm run serve                   # preview at http://localhost:3000
 ```
+
+**4. Make it personal.** Update the name, links, and badges in `README.md`,
+`package.json`, `CITATION.cff`, and `.github/FUNDING.yml`, then commit and push.
+
+**5. Publish.** In your repo's **Settings → Pages**, set the source to
+**Deploy from a branch → `main` → `/ (root)`**. Every push then rebuilds the
+index and deploys your timeline automatically. See [Deployment](#deployment).
+
+That's it — your logs now live in your repo, completely independent of this one.
 
 ## Usage
 
@@ -74,6 +117,7 @@ npm run serve                   # preview at http://localhost:3000
 | `npm run new -- "Title"`        | Create today's log (title optional) and rebuild     |
 | `npm run build`                 | Regenerate `logs/logs.json` from the Markdown files |
 | `npm run serve`                 | Serve the site locally on port 3000                 |
+| `npm run reset`                 | Clear all logs for a fresh start (`-- --empty` / `-- --yes`) |
 
 After editing a log's title, content, or tags, run `npm run build` to refresh
 the index. (CI also verifies this on every push.)
@@ -90,6 +134,7 @@ daily-log/
 │   ├── lib.js          # Core: template, title/excerpt/tag extraction, index builder
 │   ├── new.js          # Create today's log + rebuild index
 │   ├── build.js        # Rebuild logs.json only
+│   ├── reset.js        # Clear demo logs for a fresh start
 │   └── serve.js        # Zero-dependency local dev server
 ├── logs/
 │   ├── 2026-04/

@@ -31,6 +31,12 @@ npm run serve
 # then open http://localhost:3000
 ```
 
+Starting your own journal from a fork? Clear the demo logs first:
+
+```bash
+npm run reset            # deletes all logs/ and seeds a welcome entry
+```
+
 > The cards fetch `logs/logs.json`, so the site must be served over HTTP —
 > opening `index.html` directly from disk will not load the logs.
 

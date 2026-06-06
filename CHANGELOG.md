@@ -6,6 +6,13 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Added
+
+- `npm run reset` — clears the demo/personal logs so a fork or template copy
+  starts from a clean slate (seeds a welcome entry, or `--empty` for none).
+- A "Make It Your Own" guide in the README walking new users from template/fork
+  through reset, first entry, and GitHub Pages deployment.
+
 ## [1.1.0] - 2026-06-06
 
 ### Added

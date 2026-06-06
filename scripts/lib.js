@@ -1,4 +1,4 @@
-import { access, mkdir, readdir, readFile, writeFile } from 'node:fs/promises';
+import { access, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises';
 import path from 'node:path';
 
 export const LOG_DIR = 'logs';
@@ -115,6 +115,65 @@ export async function createLog(title, dateKey = todayKey()) {
   await writeFile(file, logTemplate(resolvedTitle, dateKey));
 
   return { created: true, file };
+}
+
+/** A friendly first log so a fresh install isn't an empty page. */
+export function welcomeTemplate(dateKey = todayKey()) {
+  return `# Welcome to your daily log
+
+## Date
+${dateKey}
+
+## Work done
+- Set up my own Daily Log and cleared the demo entries.
+
+## Notes
+- Create a new entry with \`npm run new -- "Title"\`.
+- Preview locally with \`npm run serve\`.
+
+## Ideas / Next steps
+- Write something tomorrow.
+
+## Tags
+- getting-started
+`;
+}
+
+/**
+ * Remove every demo/personal log so a fork starts clean.
+ * Deletes all logs/<YYYY-MM>/ folders and resets the index.
+ * By default seeds one "welcome" entry for today; pass { seed: false }
+ * to leave the logs empty. Returns { removed, seeded }.
+ */
+export async function resetLogs({ seed = true } = {}) {
+  let months = [];
+  try {
+    months = await readdir(LOG_DIR, { withFileTypes: true });
+  } catch {
+    months = [];
+  }
+
+  let removed = 0;
+  for (const month of months) {
+    if (!month.isDirectory() || !MONTH_RE.test(month.name)) continue;
+    await rm(path.join(LOG_DIR, month.name), { recursive: true, force: true });
+    removed += 1;
+  }
+
+  await mkdir(LOG_DIR, { recursive: true });
+
+  let seeded = false;
+  if (seed) {
+    const dateKey = todayKey();
+    const monthDir = path.join(LOG_DIR, dateKey.slice(0, 7));
+    await mkdir(monthDir, { recursive: true });
+    await writeFile(path.join(monthDir, `${dateKey}.md`), welcomeTemplate(dateKey));
+    seeded = true;
+  }
+
+  await buildIndex();
+
+  return { removed, seeded };
 }
 
 /**
