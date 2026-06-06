@@ -1,6 +1,6 @@
 {
   "name": "daily-log",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "A simple, automated daily logging system — Markdown logs published as a static site via GitHub Pages.",
   "type": "module",
   "license": "MIT",

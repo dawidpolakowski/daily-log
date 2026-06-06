@@ -6,6 +6,8 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+## [1.1.0] - 2026-06-06
+
 ### Added
 
 - Open-source project files: `LICENSE` (MIT), `CONTRIBUTING.md`,
