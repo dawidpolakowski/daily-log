@@ -1,5 +1,131 @@
 [
   {
+    "date": "2026-06-16",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-16.md",
+    "title": "Diskcorder scaffold",
+    "excerpt": "Scaffolded Diskcorder (main/preload/db/scanner + UI shell), added renderer UI logic and a Taskcorder-family theme; pushed a new tattoo site version.",
+    "tags": [
+      "diskcorder",
+      "electron",
+      "gamedev"
+    ]
+  },
+  {
+    "date": "2026-06-15",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-15.md",
+    "title": "Housekeeping",
+    "excerpt": "General housekeeping across repos and notes.",
+    "tags": [
+      "housekeeping",
+      "notes"
+    ]
+  },
+  {
+    "date": "2026-06-14",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-14.md",
+    "title": "Idea sketches",
+    "excerpt": "Brainstormed features and sketched rough layouts.",
+    "tags": [
+      "planning",
+      "ideas"
+    ]
+  },
+  {
+    "date": "2026-06-13",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-13.md",
+    "title": "Learning notes",
+    "excerpt": "Watched tutorials and took notes on tooling improvements.",
+    "tags": [
+      "learning",
+      "notes"
+    ]
+  },
+  {
+    "date": "2026-06-12",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-12.md",
+    "title": "Backlog grooming",
+    "excerpt": "Reviewed the project backlog and prioritised next steps.",
+    "tags": [
+      "planning",
+      "backlog"
+    ]
+  },
+  {
+    "date": "2026-06-11",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-11.md",
+    "title": "Reading and research",
+    "excerpt": "Read up on game design patterns and jotted down references.",
+    "tags": [
+      "learning",
+      "research"
+    ]
+  },
+  {
+    "date": "2026-06-10",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-10.md",
+    "title": "Tattoo Szpila website content",
+    "excerpt": "Expanded service copy, added gallery with readable category captions and optimized images for the Tattoo Szpila site.",
+    "tags": [
+      "web",
+      "tattooszpila",
+      "content"
+    ]
+  },
+  {
+    "date": "2026-06-09",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-09.md",
+    "title": "SkyObbies weapons and traps",
+    "excerpt": "Added bow-aim hook, blowgun with smoke, spiral parkour, spike traps and a new Speed Run course.",
+    "tags": [
+      "skyobbies",
+      "minecraft",
+      "gamedev"
+    ]
+  },
+  {
+    "date": "2026-06-08",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-08.md",
+    "title": "SkyObbies parkour kit",
+    "excerpt": "Added the full SkyObbies parkour kit: blocks, items, course, SFX, weapon-in-hand models, ammo, snails and tiers.",
+    "tags": [
+      "skyobbies",
+      "minecraft",
+      "gamedev"
+    ]
+  },
+  {
+    "date": "2026-06-07",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-07.md",
+    "title": "Planning and notes",
+    "excerpt": "Sketched ideas for upcoming projects and tidied notes.",
+    "tags": [
+      "planning",
+      "notes"
+    ]
+  },
+  {
+    "date": "2026-06-06",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-06.md",
+    "title": "Hexbench and daily-log release",
+    "excerpt": "Built the Hexbench honeycomb hex grid with notes tab, magnetic drag and pro theming; shipped daily-log v1.1.0 with a reset command.",
+    "tags": [
+      "hexclipboard",
+      "daily-log",
+      "release"
+    ]
+  },
+  {
     "date": "2026-06-05",
     "month": "2026-06",
     "file": "2026-06/2026-06-05.md",
@@ -773,6 +899,17 @@
     "title": "Project cleanup and AI demo",
     "excerpt": "Learned about tokenization and context windows.",
     "tags": []
+  },
+  {
+    "date": "2026-03-02",
+    "month": "2026-03",
+    "file": "2026-03/2026-03-02.md",
+    "title": "Reading and planning",
+    "excerpt": "Read about LLM tooling and planned the next daily-log tweaks.",
+    "tags": [
+      "learning",
+      "planning"
+    ]
   },
   {
     "date": "2026-03-01",
