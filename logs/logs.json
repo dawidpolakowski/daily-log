@@ -1,5 +1,89 @@
 [
   {
+    "date": "2026-06-23",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-23.md",
+    "title": "Diskcorder and book project",
+    "excerpt": "Continued Diskcorder development and implementation",
+    "tags": [
+      "diskcorder",
+      "book",
+      "dev"
+    ]
+  },
+  {
+    "date": "2026-06-22",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-22.md",
+    "title": "Book writing and YouTube editing",
+    "excerpt": "Continued book writing and research",
+    "tags": [
+      "book",
+      "youtube",
+      "content creation",
+      "dev"
+    ]
+  },
+  {
+    "date": "2026-06-21",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-21.md",
+    "title": "Travel vlog work",
+    "excerpt": "Filmed and edited travel vlog content",
+    "tags": [
+      "youtube",
+      "travel vlog",
+      "content creation"
+    ]
+  },
+  {
+    "date": "2026-06-20",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-20.md",
+    "title": "YouTube guinea pig content",
+    "excerpt": "Recorded and edited guinea pig content for YouTube",
+    "tags": [
+      "youtube",
+      "guinea pig",
+      "content creation"
+    ]
+  },
+  {
+    "date": "2026-06-19",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-19.md",
+    "title": "Learning Diskcorder",
+    "excerpt": "Deep learning session on Diskcorder framework and concepts",
+    "tags": [
+      "diskcorder",
+      "learning",
+      "dev"
+    ]
+  },
+  {
+    "date": "2026-06-18",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-18.md",
+    "title": "Deep dive into Diskcorder",
+    "excerpt": "Continued work on Diskcorder implementation",
+    "tags": [
+      "diskcorder",
+      "dev"
+    ]
+  },
+  {
+    "date": "2026-06-17",
+    "month": "2026-06",
+    "file": "2026-06/2026-06-17.md",
+    "title": "Working on book and Diskcorder",
+    "excerpt": "Started working on book project",
+    "tags": [
+      "book",
+      "diskcorder",
+      "dev"
+    ]
+  },
+  {
     "date": "2026-06-16",
     "month": "2026-06",
     "file": "2026-06/2026-06-16.md",
