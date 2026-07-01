@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-01",
+    "month": "2026-07",
+    "file": "2026-07/2026-07-01.md",
+    "title": "SEO tooling work",
+    "excerpt": "Worked on SEO tools and keyword analysis features",
+    "tags": [
+      "seo",
+      "tools",
+      "dev"
+    ]
+  },
+  {
     "date": "2026-06-30",
     "month": "2026-06",
     "file": "2026-06/2026-06-30.md",
