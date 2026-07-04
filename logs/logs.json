@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-04",
+    "month": "2026-07",
+    "file": "2026-07/2026-07-04.md",
+    "title": "Minecraft addon build",
+    "excerpt": "Built and tested features for the Minecraft addon",
+    "tags": [
+      "minecraft",
+      "addon",
+      "gamedev"
+    ]
+  },
+  {
     "date": "2026-07-03",
     "month": "2026-07",
     "file": "2026-07/2026-07-03.md",
