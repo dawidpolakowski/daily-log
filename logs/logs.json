@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-23",
+    "month": "2026-07",
+    "file": "2026-07/2026-07-23.md",
+    "title": "Guinea pig game prototype",
+    "excerpt": "Started prototyping a small guinea pig game",
+    "tags": [
+      "gamedev",
+      "guinea-pigs",
+      "prototype"
+    ]
+  },
+  {
     "date": "2026-07-22",
     "month": "2026-07",
     "file": "2026-07/2026-07-22.md",
