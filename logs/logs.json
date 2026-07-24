@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-24",
+    "month": "2026-07",
+    "file": "2026-07/2026-07-24.md",
+    "title": "TypewriterX improvements",
+    "excerpt": "Fixed bugs reported after the last typewriterx release",
+    "tags": [
+      "typewriterx",
+      "dev",
+      "editor"
+    ]
+  },
+  {
     "date": "2026-07-23",
     "month": "2026-07",
     "file": "2026-07/2026-07-23.md",
