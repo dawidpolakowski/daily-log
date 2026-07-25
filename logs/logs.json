@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-25",
+    "month": "2026-07",
+    "file": "2026-07/2026-07-25.md",
+    "title": "Hexman API testing tool",
+    "excerpt": "Started building Hexman, an open source API testing tool",
+    "tags": [
+      "hexman",
+      "opensource",
+      "dev"
+    ]
+  },
+  {
     "date": "2026-07-24",
     "month": "2026-07",
     "file": "2026-07/2026-07-24.md",
