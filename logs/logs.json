@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-07-26",
+    "month": "2026-07",
+    "file": "2026-07/2026-07-26.md",
+    "title": "CGI worktrace tool",
+    "excerpt": "Started cgi-worktrace, a CLI tool for tracing work sessions",
+    "tags": [
+      "cgi",
+      "worktrace",
+      "opensource"
+    ]
+  },
+  {
     "date": "2026-07-25",
     "month": "2026-07",
     "file": "2026-07/2026-07-25.md",
