@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-02",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-02.md",
+    "title": "Guinea pig game development",
+    "excerpt": "Built out player movement and a basic guinea pig character controller",
+    "tags": [
+      "gamedev",
+      "guinea-pigs",
+      "prototype"
+    ]
+  },
+  {
     "date": "2026-08-01",
     "month": "2026-08",
     "file": "2026-08/2026-08-01.md",
