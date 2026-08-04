@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-04",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-04.md",
+    "title": "Hexman development",
+    "excerpt": "Added collection and environment support to Hexman",
+    "tags": [
+      "hexman",
+      "opensource",
+      "dev"
+    ]
+  },
+  {
     "date": "2026-08-03",
     "month": "2026-08",
     "file": "2026-08/2026-08-03.md",
