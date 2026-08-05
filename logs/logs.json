@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-05",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-05.md",
+    "title": "cgi-worktrace development",
+    "excerpt": "Added reporting output to cgi-worktrace",
+    "tags": [
+      "cgi",
+      "worktrace",
+      "opensource"
+    ]
+  },
+  {
     "date": "2026-08-04",
     "month": "2026-08",
     "file": "2026-08/2026-08-04.md",
