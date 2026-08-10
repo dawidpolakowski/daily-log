@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-10",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-10.md",
+    "title": "Guinea pig game features",
+    "excerpt": "Added feeding and care mechanics to the guinea pig game",
+    "tags": [
+      "gamedev",
+      "guinea-pigs",
+      "prototype"
+    ]
+  },
+  {
     "date": "2026-08-09",
     "month": "2026-08",
     "file": "2026-08/2026-08-09.md",
