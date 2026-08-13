@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-13",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-13.md",
+    "title": "Hexman testing and fixes",
+    "excerpt": "Fixed bugs found while testing Hexman against real APIs",
+    "tags": [
+      "hexman",
+      "opensource",
+      "dev"
+    ]
+  },
+  {
     "date": "2026-08-12",
     "month": "2026-08",
     "file": "2026-08/2026-08-12.md",
