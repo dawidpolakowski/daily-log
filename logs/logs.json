@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-15",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-15.md",
+    "title": "cgi-worktrace improvements",
+    "excerpt": "Improved cgi-worktrace CLI output formatting",
+    "tags": [
+      "cgi",
+      "worktrace",
+      "opensource"
+    ]
+  },
+  {
     "date": "2026-08-14",
     "month": "2026-08",
     "file": "2026-08/2026-08-14.md",
