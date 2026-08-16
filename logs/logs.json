@@ -1,5 +1,17 @@
 [
   {
+    "date": "2026-08-16",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-16.md",
+    "title": "Open source maintenance",
+    "excerpt": "Triaged issues across a few open source repos",
+    "tags": [
+      "opensource",
+      "dev",
+      "community"
+    ]
+  },
+  {
     "date": "2026-08-15",
     "month": "2026-08",
     "file": "2026-08/2026-08-15.md",
