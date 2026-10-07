@@ -1,5 +1,576 @@
 [
   {
+    "date": "2026-10-07",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-07.md",
+    "title": "Guinea pig game work",
+    "excerpt": "Tuned game feel and controls",
+    "tags": [
+      "gamedev",
+      "guinea-pigs"
+    ]
+  },
+  {
+    "date": "2026-10-06",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-06.md",
+    "title": "Hostinger migration and SEO",
+    "excerpt": "Continued the website migration to the Hostinger server",
+    "tags": [
+      "hosting",
+      "seo",
+      "diskcorder"
+    ]
+  },
+  {
+    "date": "2026-10-05",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-05.md",
+    "title": "Hostinger migration and SEO",
+    "excerpt": "Worked on migrating the website to a Hostinger server",
+    "tags": [
+      "hosting",
+      "seo",
+      "web"
+    ]
+  },
+  {
+    "date": "2026-10-04",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-04.md",
+    "title": "Frodo and Sam video work",
+    "excerpt": "Edited footage of Frodo and Sam",
+    "tags": [
+      "video",
+      "frodo-and-sam",
+      "youtube"
+    ]
+  },
+  {
+    "date": "2026-10-03",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-03.md",
+    "title": "Hexman development",
+    "excerpt": "Worked on Hexman features and request handling",
+    "tags": [
+      "hexman",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2026-10-02",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-02.md",
+    "title": "Open source maintenance",
+    "excerpt": "Triaged issues and reviewed pull requests",
+    "tags": [
+      "open source",
+      "maintenance"
+    ]
+  },
+  {
+    "date": "2026-10-01",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-01.md",
+    "title": "Learning AI",
+    "excerpt": "Worked through AI tutorials and experiments",
+    "tags": [
+      "ai",
+      "learning"
+    ]
+  },
+  {
+    "date": "2026-09-30",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-30.md",
+    "title": "Writing the new book",
+    "excerpt": "Wrote a new chapter draft",
+    "tags": [
+      "writing",
+      "book"
+    ]
+  },
+  {
+    "date": "2026-09-29",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-29.md",
+    "title": "TypewriterX typewriter view",
+    "excerpt": "Added a typewriter view and a paper gallery",
+    "tags": [
+      "typewriterx",
+      "ui",
+      "testing"
+    ]
+  },
+  {
+    "date": "2026-09-28",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-28.md",
+    "title": "TypewriterX Pro",
+    "excerpt": "Added Pro licensing and native window controls",
+    "tags": [
+      "typewriterx",
+      "release",
+      "desktop"
+    ]
+  },
+  {
+    "date": "2026-09-27",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-27.md",
+    "title": "Diskcorder development",
+    "excerpt": "Worked on Diskcorder features",
+    "tags": [
+      "diskcorder",
+      "desktop"
+    ]
+  },
+  {
+    "date": "2026-09-26",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-26.md",
+    "title": "TypewriterX maintenance",
+    "excerpt": "Fixed editor bugs",
+    "tags": [
+      "typewriterx",
+      "desktop"
+    ]
+  },
+  {
+    "date": "2026-09-25",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-25.md",
+    "title": "Crystal Mind: Calm mode and web port",
+    "excerpt": "Added Calm mode, planetary chakra tuning and recorded chakra sounds",
+    "tags": [
+      "gamedev",
+      "crystal-mind",
+      "phaser"
+    ]
+  },
+  {
+    "date": "2026-09-24",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-24.md",
+    "title": "Settling in Devon",
+    "excerpt": "Kept getting the house and home office in order",
+    "tags": [
+      "devon",
+      "life"
+    ]
+  },
+  {
+    "date": "2026-09-23",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-23.md",
+    "title": "Lerayimages site rebuild kickoff",
+    "excerpt": "Backed up the live Lerayimages site",
+    "tags": [
+      "web design",
+      "astro",
+      "clients"
+    ]
+  },
+  {
+    "date": "2026-09-22",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-22.md",
+    "title": "Timecorder website and admin",
+    "excerpt": "Updated the Timecorder website",
+    "tags": [
+      "timecorder",
+      "website",
+      "webapp"
+    ]
+  },
+  {
+    "date": "2026-09-21",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-21.md",
+    "title": "SEO and client site work",
+    "excerpt": "Improved page titles, meta tags and structure for client sites",
+    "tags": [
+      "seo",
+      "web design",
+      "clients"
+    ]
+  },
+  {
+    "date": "2026-09-20",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-20.md",
+    "title": "Guinea pig game work",
+    "excerpt": "Tuned game feel and controls",
+    "tags": [
+      "gamedev",
+      "guinea-pigs"
+    ]
+  },
+  {
+    "date": "2026-09-19",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-19.md",
+    "title": "Frodo and Sam video work",
+    "excerpt": "Edited footage of Frodo and Sam",
+    "tags": [
+      "video",
+      "frodo-and-sam",
+      "youtube"
+    ]
+  },
+  {
+    "date": "2026-09-18",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-18.md",
+    "title": "Guinea pig game: settings and hazards",
+    "excerpt": "Added a settings screen and an unlimited item bar",
+    "tags": [
+      "gamedev",
+      "guinea-pigs",
+      "polish"
+    ]
+  },
+  {
+    "date": "2026-09-17",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-17.md",
+    "title": "Guinea pig game: boss fight",
+    "excerpt": "Added a Level 1 boss fight",
+    "tags": [
+      "gamedev",
+      "guinea-pigs",
+      "art"
+    ]
+  },
+  {
+    "date": "2026-09-16",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-16.md",
+    "title": "Hexman development",
+    "excerpt": "Worked on Hexman features and request handling",
+    "tags": [
+      "hexman",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2026-09-15",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-15.md",
+    "title": "Guinea pig game: swimming and leaderboard",
+    "excerpt": "Added swimming, hearts, haystacks, sound and music",
+    "tags": [
+      "gamedev",
+      "guinea-pigs",
+      "release"
+    ]
+  },
+  {
+    "date": "2026-09-14",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-14.md",
+    "title": "Open source maintenance",
+    "excerpt": "Triaged issues and reviewed pull requests",
+    "tags": [
+      "open source",
+      "maintenance"
+    ]
+  },
+  {
+    "date": "2026-09-13",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-13.md",
+    "title": "Learning AI",
+    "excerpt": "Worked through AI tutorials and experiments",
+    "tags": [
+      "ai",
+      "learning"
+    ]
+  },
+  {
+    "date": "2026-09-12",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-12.md",
+    "title": "Writing the new book",
+    "excerpt": "Wrote a new chapter draft",
+    "tags": [
+      "writing",
+      "book"
+    ]
+  },
+  {
+    "date": "2026-09-11",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-11.md",
+    "title": "Diskcorder development",
+    "excerpt": "Worked on Diskcorder features",
+    "tags": [
+      "diskcorder",
+      "desktop"
+    ]
+  },
+  {
+    "date": "2026-09-10",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-10.md",
+    "title": "TypewriterX maintenance",
+    "excerpt": "Fixed editor bugs",
+    "tags": [
+      "typewriterx",
+      "desktop"
+    ]
+  },
+  {
+    "date": "2026-09-09",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-09.md",
+    "title": "Settling in Devon",
+    "excerpt": "Kept getting the house and home office in order",
+    "tags": [
+      "devon",
+      "life"
+    ]
+  },
+  {
+    "date": "2026-09-08",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-08.md",
+    "title": "SEO and client site work",
+    "excerpt": "Improved page titles, meta tags and structure for client sites",
+    "tags": [
+      "seo",
+      "web design",
+      "clients"
+    ]
+  },
+  {
+    "date": "2026-09-07",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-07.md",
+    "title": "Guinea pig game work",
+    "excerpt": "Tuned game feel and controls",
+    "tags": [
+      "gamedev",
+      "guinea-pigs"
+    ]
+  },
+  {
+    "date": "2026-09-06",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-06.md",
+    "title": "Frodo and Sam video work",
+    "excerpt": "Edited footage of Frodo and Sam",
+    "tags": [
+      "video",
+      "frodo-and-sam",
+      "youtube"
+    ]
+  },
+  {
+    "date": "2026-09-05",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-05.md",
+    "title": "Hexman development",
+    "excerpt": "Worked on Hexman features and request handling",
+    "tags": [
+      "hexman",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2026-09-04",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-04.md",
+    "title": "Open source maintenance",
+    "excerpt": "Triaged issues and reviewed pull requests",
+    "tags": [
+      "open source",
+      "maintenance"
+    ]
+  },
+  {
+    "date": "2026-09-03",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-03.md",
+    "title": "Learning AI",
+    "excerpt": "Worked through AI tutorials and experiments",
+    "tags": [
+      "ai",
+      "learning"
+    ]
+  },
+  {
+    "date": "2026-09-02",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-02.md",
+    "title": "Writing the new book",
+    "excerpt": "Wrote a new chapter draft",
+    "tags": [
+      "writing",
+      "book"
+    ]
+  },
+  {
+    "date": "2026-09-01",
+    "month": "2026-09",
+    "file": "2026-09/2026-09-01.md",
+    "title": "Diskcorder development",
+    "excerpt": "Worked on Diskcorder features",
+    "tags": [
+      "diskcorder",
+      "desktop"
+    ]
+  },
+  {
+    "date": "2026-08-31",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-31.md",
+    "title": "TypewriterX maintenance",
+    "excerpt": "Fixed editor bugs",
+    "tags": [
+      "typewriterx",
+      "desktop"
+    ]
+  },
+  {
+    "date": "2026-08-30",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-30.md",
+    "title": "Settling in Devon",
+    "excerpt": "Kept getting the house and home office in order",
+    "tags": [
+      "devon",
+      "life"
+    ]
+  },
+  {
+    "date": "2026-08-29",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-29.md",
+    "title": "SEO and client site work",
+    "excerpt": "Improved page titles, meta tags and structure for client sites",
+    "tags": [
+      "seo",
+      "web design",
+      "clients"
+    ]
+  },
+  {
+    "date": "2026-08-28",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-28.md",
+    "title": "Timecorder auth and hotfixes",
+    "excerpt": "Added authentication to Timecorder and shipped a hotfix",
+    "tags": [
+      "timecorder",
+      "auth",
+      "bugfix"
+    ]
+  },
+  {
+    "date": "2026-08-27",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-27.md",
+    "title": "Soundcorder first version",
+    "excerpt": "Started the Soundcorder mobile app from scratch",
+    "tags": [
+      "soundcorder",
+      "mobile",
+      "release"
+    ]
+  },
+  {
+    "date": "2026-08-26",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-26.md",
+    "title": "Guinea pig game work",
+    "excerpt": "Tuned game feel and controls",
+    "tags": [
+      "gamedev",
+      "guinea-pigs"
+    ]
+  },
+  {
+    "date": "2026-08-25",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-25.md",
+    "title": "Frodo and Sam video work",
+    "excerpt": "Edited footage of Frodo and Sam",
+    "tags": [
+      "video",
+      "frodo-and-sam",
+      "youtube"
+    ]
+  },
+  {
+    "date": "2026-08-24",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-24.md",
+    "title": "Hexman development",
+    "excerpt": "Worked on Hexman features and request handling",
+    "tags": [
+      "hexman",
+      "tooling"
+    ]
+  },
+  {
+    "date": "2026-08-23",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-23.md",
+    "title": "Open source maintenance",
+    "excerpt": "Triaged issues and reviewed pull requests",
+    "tags": [
+      "open source",
+      "maintenance"
+    ]
+  },
+  {
+    "date": "2026-08-22",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-22.md",
+    "title": "Learning AI",
+    "excerpt": "Worked through AI tutorials and experiments",
+    "tags": [
+      "ai",
+      "learning"
+    ]
+  },
+  {
+    "date": "2026-08-21",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-21.md",
+    "title": "Writing the new book",
+    "excerpt": "Wrote a new chapter draft",
+    "tags": [
+      "writing",
+      "book"
+    ]
+  },
+  {
+    "date": "2026-08-20",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-20.md",
+    "title": "Timecorder mind map",
+    "excerpt": "Fixed the mind map and removed the nesting cap",
+    "tags": [
+      "timecorder",
+      "mind-map",
+      "frontend"
+    ]
+  },
+  {
+    "date": "2026-08-19",
+    "month": "2026-08",
+    "file": "2026-08/2026-08-19.md",
+    "title": "Timecorder web app and API hardening",
+    "excerpt": "Moved Timecorder further towards a web app and refactored the project view",
+    "tags": [
+      "timecorder",
+      "webapp",
+      "security"
+    ]
+  },
+  {
     "date": "2026-08-18",
     "month": "2026-08",
     "file": "2026-08/2026-08-18.md",
