@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-23",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-23.md",
+    "title": "Video editor",
+    "excerpt": "Built the first version of the Clipcorder video editor.",
+    "tags": [
+      "clipcorder",
+      "ai"
+    ]
+  },
+  {
     "date": "2026-10-22",
     "month": "2026-10",
     "file": "2026-10/2026-10-22.md",
