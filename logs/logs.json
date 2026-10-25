@@ -1,5 +1,16 @@
 [
   {
+    "date": "2026-10-25",
+    "month": "2026-10",
+    "file": "2026-10/2026-10-25.md",
+    "title": "Clipboard app",
+    "excerpt": "Improved the hexClipboard app UI.",
+    "tags": [
+      "hexclipboard",
+      "ai"
+    ]
+  },
+  {
     "date": "2026-10-24",
     "month": "2026-10",
     "file": "2026-10/2026-10-24.md",
